@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+	<%- partial('_partial/head') %>
+<body>
+	<% if(is_home()) {%>
+		<% var data = mobile_header_menu();%>
+		<%- data %>
+	<% } else {%>
+		<% var sidebar = mobile_sidebar_menu();%>
+		<%- sidebar %>
+	<% } %>
+  <div class="main">
+      <%- body %>
+  </div>
+</body>
+<script type="text/javascript">
+	console.log('敢偷看我代码!! 发现问题你知道找谁吗？ 你需要联系王昊,你知道吗？ 以后没有我的允许, 不许看我代码!!!!');
+
+	var mobileIcon = document.getElementById('mobile-icon');
+	console.log(mobileIcon);
+	mobileIcon.addEventListener('click', function() {
+		console.log($('.ui.labeled.icon.sidebar'));
+		$('.ui.sidebar')
+		  .sidebar('toggle')
+		;
+	});
+</script>
+</html>

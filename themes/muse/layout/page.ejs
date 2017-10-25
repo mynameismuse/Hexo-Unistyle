@@ -1,0 +1,123 @@
+<%- partial('_partial/nav') %>
+<%- partial('_partial/sidebar') %>
+<%- partial('_partial/footer') %>
+<script>
+	//定义文章根元素
+	var content = document.querySelector('.article')
+	//查询所有h2标题
+	var h2 = content.querySelectorAll('h2');
+	for(var i = 0, length = h2.length; i < length; i++) {
+		var a = h2[i].querySelector('a');
+		var outWrap = document.createElement('a');
+		outWrap.id = '#' + h2[i].id;
+		content.insertBefore(outWrap,h2[i]);
+		outWrap.appendChild(h2[i]);
+
+		var link = document.createElement('a');
+		link.innerHTML = '#';
+		link.href = '#' + h2[i].id;
+		link.className = 'header-link';
+		h2[i].appendChild(link);
+	}	
+
+	//查询所有h3标题
+	var h3 = content.querySelectorAll('h3');
+	for(var i = 0, length = h3.length; i < length; i++) {
+		var a = h3[i].querySelector('a');
+		var outWrap = document.createElement('a');
+		outWrap.id = '#' + h3[i].id;
+		outWrap.style.position = 'relative';
+		content.insertBefore(outWrap, h3[i]);
+		outWrap.appendChild(h3[i]);
+
+		var link = document.createElement('a');
+		link.innerHTML = '#';
+		link.href = '#' + h3[i].id;
+		link.className = 'header-link';
+		h3[i].appendChild(link);
+	}
+
+	//toc置顶
+	var toc = document.querySelector('.article-toc');
+	var header = document.querySelector('.headerWrapper');
+	var headerHeight = header.clientHeight;
+
+	window.addEventListener('scroll', function() {
+
+		var scrollTop = document.scrollingElement.scrollTop;
+
+		if(scrollTop > headerHeight) {
+			toc.className = 'article-toc fixed';
+		}else {
+			toc.className = 'article-toc';
+		}
+	});
+
+	//代码块提取
+	var demos = document.querySelectorAll('.demo');
+	for(var i = 0, length = demos.length; i < length; i++) {
+
+		var button = demos[i].querySelector('button');
+			
+		var click = demoClick(demos[i]);
+		button.addEventListener('click', click);
+	}
+
+	function demoClick (el) {
+		return function () {
+			if(el.classList.contains('active')) {
+				el.classList.remove('active');
+			}else {
+				el.classList.add('active');
+			}
+
+			console.log(el);
+		}
+	}
+
+	window.addEventListener('scroll', updateSidebar);
+
+	function updateSidebar() {
+		var doc = document.documentElement;
+		var article =document.querySelector('.article');
+		var allHeaders = article.querySelectorAll('h1, h2, h3');
+		var top = doc && doc.scrollTop || document.body.scrollTop;
+		var last;
+		var index;
+
+		for (var i = 0; i < allHeaders.length; i++) {
+			var link = allHeaders[i];
+			if(link.offsetTop > top + 80) {
+				last = link;
+				index = i;
+				break;
+			}
+		}
+
+		if(last) {
+			setActive(last, index);
+		}
+	}
+
+	function setActive(el, index) {
+		var previousActive = document.querySelector('.toc-link.active');
+		var subTitles = document.querySelectorAll('.toc-text');
+
+		if(previousActive) {
+			previousActive.classList.remove('active');
+		}
+
+		if(typeof index == 'number') {
+			subTitles[index].parentNode.classList.add('active');
+		}
+	}
+</script>
+
+
+
+
+
+
+
+
+

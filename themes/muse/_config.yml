@@ -1,0 +1,34 @@
+## Home favicon ---首页网站图标位置
+favicon: img/logo-1@2x.png
+
+## Home Content Setting ---首页内容配置
+content_img: img/woui@2x.png
+content_main_img: img/image.png
+content_text: 该平台内容主要为web端产品做基础性指导，方便设计师统一设计风格和前端统一代码规范，提高设计与前端协作效率，提升产品用户体验。
+
+## Home Card Setting ---首页卡片配置
+cards_nav_icon: img/path.png
+
+cards_1_img: img/card.png
+cards_1_title: 指南
+cards_1_desc: 了解设计指南，帮助产品设计人员搭建逻辑清晰、结构合理且高效易用的产品。
+cards_1_link: /docs/install.html
+
+cards_2_img: img/zujian.png
+cards_2_title: 组件
+cards_2_desc: 使用组件 Demo 快速体验交互细节；使用前端框架封装的代码帮助工程师快速开发。
+cards_2_link: /components/component.html
+
+cards_3_img: img/ziyuan.png
+cards_3_title: 资源
+cards_3_desc: 下载相关资源，用其快速搭建页面原型或高保真视觉稿，提升产品设计效率。
+cards_3_link: /resources/resource.html
+
+## Home Footer Setting ---首页底部配置
+footer_main_title: WoUI 1.0 Alpha Version
+footer_main_desc: Powered By 庙里的王和尚
+github_img: img/github@2x.png
+github_link: http://192.168.7.53:3000/woUI/woUI
+
+## Page favicon ---文章页网站图标位置
+page_favicon: img/logo-2@2x.png

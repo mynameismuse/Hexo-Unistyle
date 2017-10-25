@@ -1,0 +1,28 @@
+<div class="headerWrapper">
+	<div class="header header-home">
+		<div class="container">
+			<h1 class="logo">
+				<a href="<%- url_for() %>">
+					<% if(is_home()) {%>
+						<img src="<%- theme.favicon %>">
+					<% } else {%>
+						<img src="<%- url_for(theme.page_favicon) %>">
+					<% } %>
+				</a>
+			</h1>
+			<ul class="nav">
+				<% var data = header_menu();%>
+				<%- data %>
+				<li class="nav-item mobile" id="mobile-icon">
+					<a>
+						<% if(is_home()) {%>
+							<img src="/img/sidebar.png">
+						<% } else {%>
+							<img src="/img/sidebar-white.png">
+						<% } %>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>

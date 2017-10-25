@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+	<head>
+    <meta charset="UTF-8">
+    <title>
+    	
+    	test4 | 
+    	联通通用样式库
+    </title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+    
+		<link rel="stylesheet" href="/css/page.css">
+	
+    <script type="text/javascript" src="/css/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="/css/sidebar.min.js"></script>
+</head>
+<body>
+	
+		
+		<div class="ui sidebar inverted vertical menu"><a class="item-title">菜单</a><a class="item" href="/docs/install.html">指南</a><a class="item" href="/components/component.html">组件</a><a class="item" href="/resources/resource.html">资源</a><a class="item" href="/about/about.html">关于</a><br><a class="item-title">子菜单</a><a class="item" href="install.html">安装</a><a class="item" href="structure.html">文档结构</a><a class="item" href="new.html">新语法</a></div>
+	
+  <div class="main">
+      <div class="headerWrapper">
+	<div class="header header-home">
+		<div class="container">
+			<h1 class="logo">
+				<a href="/">
+					
+						<img src="/img/logo-2@2x.png">
+					
+				</a>
+			</h1>
+			<ul class="nav">
+				
+				<li class="nav-item"><a href="/docs/install.html">指南</a></li><li class="nav-item"><a href="/components/component.html">组件</a></li><li class="nav-item"><a href="/resources/resource.html">资源</a></li><li class="nav-item"><a href="/about/about.html">关于</a></li>
+				<li class="nav-item mobile" id="mobile-icon">
+					<a>
+						
+							<img src="/img/sidebar-white.png">
+						
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div class="contentWrapper">
+	<div class="container">
+		<div class="content-inner">
+			<article class="article-container">
+				<div class="article-inner">
+					<div class="article">
+						<p>创建 Hexo 主题非常容易，您只要在 <code>themes</code> 文件夹内，新增一个任意名称的文件夹，并修改 <code>_config.yml</code> 内的 <code>theme</code> 设定，即可切换主题。一个主题可能会有以下的结构：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">.</div><div class="line">├── _config.yml</div><div class="line">├── languages</div><div class="line">├── layout</div><div class="line">├── scripts</div><div class="line">└── source</div></pre></td></tr></table></figure>
+<h3 id="config-yml"><a href="#config-yml" class="headerlink" title="_config.yml"></a>_config.yml</h3><p>主题的配置文件。修改时会自动更新，无需重启服务器。</p>
+<h3 id="languages"><a href="#languages" class="headerlink" title="languages"></a>languages</h3><p>语言文件夹。请参见 <a href="internationalization.html">国际化 (i18n)</a>。</p>
+<h3 id="layout"><a href="#layout" class="headerlink" title="layout"></a>layout</h3><p>布局文件夹。用于存放主题的模板文件，决定了网站内容的呈现方式，Hexo 内建 <a href="http://paularmstrong.github.com/swig/" target="_blank" rel="external">Swig</a> 模板引擎，您可以另外安装插件来获得 <a href="https://github.com/hexojs/hexo-renderer-ejs" target="_blank" rel="external">EJS</a>、<a href="https://github.com/hexojs/hexo-renderer-haml" target="_blank" rel="external">Haml</a> 或 <a href="https://github.com/hexojs/hexo-renderer-jade" target="_blank" rel="external">Jade</a> 支持，Hexo 根据模板文件的扩展名来决定所使用的模板引擎，例如：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">layout.ejs   - 使用 EJS</div><div class="line">layout.swig  - 使用 Swig</div></pre></td></tr></table></figure>
+<p>您可参考 <a href="templates.html">模板</a> 以获得更多信息。</p>
+<h3 id="scripts"><a href="#scripts" class="headerlink" title="scripts"></a>scripts</h3><p>脚本文件夹。在启动时，Hexo 会载入此文件夹内的 JavaScript 文件，请参见 <a href="plugins.html">插件</a> 以获得更多信息。</p>
+<h3 id="source"><a href="#source" class="headerlink" title="source"></a>source</h3><p>资源文件夹，除了模板以外的 Asset，例如 CSS、JavaScript 文件等，都应该放在这个文件夹中。文件或文件夹开头名称为 <code>_</code>（下划线线）或隐藏的文件会被忽略。</p>
+<p>如果文件可以被渲染的话，会经过解析然后储存到 <code>public</code> 文件夹，否则会直接拷贝到 <code>public</code> 文件夹。</p>
+<h3 id="发布"><a href="#发布" class="headerlink" title="发布"></a>发布</h3><p>当您完成主题后，可以考虑将它发布到 <a href="/themes">主题列表</a>，让更多人能够使用您的主题。在发布前建议先进行 <a href="https://github.com/hexojs/hexo-theme-unit-test" target="_blank" rel="external">主题单元测试</a>，确保每一项功能都能正常使用。发布主题的步骤和 <a href="contributing.html#更新文档">更新文档</a> 非常类似。</p>
+<ol>
+<li>Fork <a href="https://github.com/hexojs/site" target="_blank" rel="external">hexojs/site</a></li>
+<li><p>把库（repository）复制到电脑上，并安装所依赖的插件。</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ git clone https://github.com/&lt;username&gt;/site.git</div><div class="line">$ cd site</div><div class="line">$ npm install</div></pre></td></tr></table></figure>
+</li>
+<li><p>编辑 <code>source/_data/themes.yml</code>，在文件中新增您的主题，例如：</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">- name: landscape</div><div class="line">  description: A brand new default theme for Hexo.</div><div class="line">  link: https://github.com/hexojs/hexo-theme-landscape</div><div class="line">  preview: http://hexo.io/hexo-theme-landscape</div><div class="line">  tags:</div><div class="line">    - official</div><div class="line">    - responsive</div><div class="line">    - widget</div><div class="line">    - two_column</div><div class="line">    - one_column</div></pre></td></tr></table></figure>
+</li>
+<li><p>在 <code>source/themes/screenshots</code> 新增同名的截图档案，图片必须为 800x500 的 PNG 文件。</p>
+</li>
+<li>推送（push）分支。</li>
+<li>建立一个新的合并申请（pull request）并描述改动。</li>
+</ol>
+
+					</div>
+					<div class="article-toc">
+						<div class="article-toc-inner">
+							<ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#config-yml"><span class="toc-text">_config.yml</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#languages"><span class="toc-text">languages</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#layout"><span class="toc-text">layout</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#scripts"><span class="toc-text">scripts</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#source"><span class="toc-text">source</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#发布"><span class="toc-text">发布</span></a></li></ol>
+						</div>
+					</div>
+				</div>
+			</article>
+			<aside class="sidebar">
+				<div class="inner">
+					
+					<strong class="sidebar-title">开发指南</strong><a class="sidebar-link"" href="install.html">安装</a><a class="sidebar-link"" href="structure.html">文档结构</a><a class="sidebar-link"" href="new.html">新语法</a>
+				</div>
+			</aside>
+		</div>
+	</div>
+</div>
+<div class="footerWrapper">
+	<div class="container">
+		<div class="footer-main">
+			<p class="footer-main-title">
+				WoUI 1.0 Alpha Version
+			</p>
+			<p class="footer-main-desc">Powered By 庙里的王和尚</p>
+		</div>
+		<div class="footer-social">
+			<a href="http://192.168.7.53:3000/woUI/woUI">
+				<img src="/img/github@2x.png">
+			</a>
+		</div>
+	</div>
+</div>
+<script>
+	//定义文章根元素
+	var content = document.querySelector('.article')
+	//查询所有h2标题
+	var h2 = content.querySelectorAll('h2');
+	for(var i = 0, length = h2.length; i < length; i++) {
+		var a = h2[i].querySelector('a');
+		var outWrap = document.createElement('a');
+		outWrap.id = '#' + h2[i].id;
+		content.insertBefore(outWrap,h2[i]);
+		outWrap.appendChild(h2[i]);
+
+		var link = document.createElement('a');
+		link.innerHTML = '#';
+		link.href = '#' + h2[i].id;
+		link.className = 'header-link';
+		h2[i].appendChild(link);
+	}	
+
+	//查询所有h3标题
+	var h3 = content.querySelectorAll('h3');
+	for(var i = 0, length = h3.length; i < length; i++) {
+		var a = h3[i].querySelector('a');
+		var outWrap = document.createElement('a');
+		outWrap.id = '#' + h3[i].id;
+		outWrap.style.position = 'relative';
+		content.insertBefore(outWrap, h3[i]);
+		outWrap.appendChild(h3[i]);
+
+		var link = document.createElement('a');
+		link.innerHTML = '#';
+		link.href = '#' + h3[i].id;
+		link.className = 'header-link';
+		h3[i].appendChild(link);
+	}
+
+	//toc置顶
+	var toc = document.querySelector('.article-toc');
+	var header = document.querySelector('.headerWrapper');
+	var headerHeight = header.clientHeight;
+
+	window.addEventListener('scroll', function() {
+
+		var scrollTop = document.scrollingElement.scrollTop;
+
+		if(scrollTop > headerHeight) {
+			toc.className = 'article-toc fixed';
+		}else {
+			toc.className = 'article-toc';
+		}
+	});
+
+	//代码块提取
+	var demos = document.querySelectorAll('.demo');
+	for(var i = 0, length = demos.length; i < length; i++) {
+
+		var button = demos[i].querySelector('button');
+			
+		var click = demoClick(demos[i]);
+		button.addEventListener('click', click);
+	}
+
+	function demoClick (el) {
+		return function () {
+			if(el.classList.contains('active')) {
+				el.classList.remove('active');
+			}else {
+				el.classList.add('active');
+			}
+
+			console.log(el);
+		}
+	}
+
+	window.addEventListener('scroll', updateSidebar);
+
+	function updateSidebar() {
+		var doc = document.documentElement;
+		var article =document.querySelector('.article');
+		var allHeaders = article.querySelectorAll('h1, h2, h3');
+		var top = doc && doc.scrollTop || document.body.scrollTop;
+		var last;
+		var index;
+
+		for (var i = 0; i < allHeaders.length; i++) {
+			var link = allHeaders[i];
+			if(link.offsetTop > top + 80) {
+				last = link;
+				index = i;
+				break;
+			}
+		}
+
+		if(last) {
+			setActive(last, index);
+		}
+	}
+
+	function setActive(el, index) {
+		var previousActive = document.querySelector('.toc-link.active');
+		var subTitles = document.querySelectorAll('.toc-text');
+
+		if(previousActive) {
+			previousActive.classList.remove('active');
+		}
+
+		if(typeof index == 'number') {
+			subTitles[index].parentNode.classList.add('active');
+		}
+	}
+</script>
+
+
+
+
+
+
+
+
+
+
+  </div>
+</body>
+<script type="text/javascript">
+	console.log('敢偷看我代码!! 发现问题你知道找谁吗？ 你需要联系王昊,你知道吗？ 以后没有我的允许, 不许看我代码!!!!');
+
+	var mobileIcon = document.getElementById('mobile-icon');
+	console.log(mobileIcon);
+	mobileIcon.addEventListener('click', function() {
+		console.log($('.ui.labeled.icon.sidebar'));
+		$('.ui.sidebar')
+		  .sidebar('toggle')
+		;
+	});
+</script>
+</html>

@@ -1,0 +1,18 @@
+<head>
+    <meta charset="UTF-8">
+    <title>
+    	<% if (page.title){ %>
+    	<%= page.title %> | <% } %>
+    	<%= config.title %>
+    </title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+    <% if(is_home()) {%>
+		<link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="css/sidebar.min.css">
+	<% } else {%>
+		<%- css('css/page') %>
+	<% } %>
+    <script type="text/javascript" src="/css/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="/css/sidebar.min.js"></script>
+</head>

@@ -1,0 +1,16 @@
+docs: 
+  开发指南: 
+    安装: install.html
+    文档结构: structure.html
+    新语法: new.html
+resources:
+  资源: 
+    下载: resource.html
+components:
+  更新日志:
+    最新更新: component.html
+  基础组件:
+    按钮: button.html
+about:
+  关于:
+    开发团队: about.html
