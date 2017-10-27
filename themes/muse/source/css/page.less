@@ -267,11 +267,11 @@
 		float: none !important;
 	}
 }
-
+	
 .vertical.menu {
 	display: block !important;
 	padding: 20px 0;
-	background-color: #171f26;
+	background-color: @dark-purple;
 	.item {
 		display: block;
 		height: 20px;
@@ -285,6 +285,7 @@
 		overflow: hidden;
 		text-overflow: ellipsis;
 		font-weight: 600;
+		opacity: .5;
 
 		&.mobile {
 			color: #fff;
@@ -292,6 +293,8 @@
 
 		&:hover {
 			background-color: rgba(119, 144, 167, 0.3);
+			opacity: 1;
+			color: #fff;
 		}
 	}
 
@@ -300,7 +303,6 @@
 		height: 20px;
 		padding: 10px 15px;
 		font-size: 18px;
-		color: #fff;
 		text-align: left;
 		line-height: 20px;
 		text-decoration: none;
@@ -308,7 +310,7 @@
 		overflow: hidden;
 		text-overflow: ellipsis;
 		font-weight: 600;
-		color: @purple;
+		color: @orange;
 	}
 }
 
