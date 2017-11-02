@@ -65,10 +65,17 @@
 
 	function demoClick (el) {
 		return function () {
+			var button = el.querySelector('button');
+			var text = button.querySelector('span');
+			var icon = button.querySelector('.icon');
 			if(el.classList.contains('active')) {
 				el.classList.remove('active');
+				icon.classList.remove('active');
+				text.innerHTML = '显示代码';
 			}else {
 				el.classList.add('active');
+				icon.classList.add('active');
+				text.innerHTML = '隐藏代码';
 			}
 
 			console.log(el);

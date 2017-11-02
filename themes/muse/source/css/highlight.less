@@ -14,7 +14,6 @@
 	h2 {
 		margin: 45px 0 0.8em;
 		padding-bottom: .7em;
-		border-bottom: 1px solid #ddd;
 		z-index: -1;
 	}
 
@@ -33,7 +32,7 @@
 		padding-bottom: 1.2em;
 		position: relative;
 		z-index: 1;
-		color: #444;
+		color: #8D8D8D;
 	}
 
 	ul, ol {
@@ -85,7 +84,8 @@
 
 	p {
 		&.tip, &.success {
-			padding: 12px 24px 12px 30px;
+			padding-left: 20px;
+			padding-right: 20px;
 			margin: 2em 0;
 			border-left-width: 4px;
 			border-left-style: solid;
@@ -153,7 +153,6 @@
 			border-radius: 4px;
 			width: 100%;
 			background-color: #fff;
-			border: 1px solid #ddd;
 			color: #8D8D8D;
 
 			&:hover {
@@ -162,10 +161,18 @@
 			}
 		}
 
+		.icon {
+			margin-right: 5px;
+			transition: all .2s linear;
+
+			&.active {
+				transform: rotate(180deg);
+			}
+		}
+
 		.demo-content {
 			display: none;
 			padding: 12px 12px;
-			border: 1px solid #ddd;
 			background-color: @codebg;
 			border-bottom-right-radius: 4px;
 			border-bottom-left-radius: 4px;
@@ -195,7 +202,6 @@
 	.note {
 		border: 1px solid #ddd;
 		border-left: 5px solid #ddd;
-		padding: 20px 20px;
 
 		&.tip {
 			border-left-color: @purple;

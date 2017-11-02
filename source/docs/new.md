@@ -105,3 +105,18 @@ categories:
 ``
 {% enddemo %}
 ```
+
+## `script`语法
+
+在`markdown`中实现javascript侵入的方式很简单，同样通过`tag injection`的方式将`javascript`实例代码嵌入。
+
+{% script %}
+console.log('test');
+{% endscript %}
+
+```
+{% script %}
+  console.log('test');
+{% endscript %}
+```
+

@@ -56,7 +56,7 @@
 					<div class="article">
 						<h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><blockquote class="note info"><strong class="note-title">文档维护人: 王昊</strong></blockquote>
 <p><code>WoUI-web</code>为联通样式库官方<code>markdown</code>解析网站生成器，通过本解析器，您只需要将您的<code>markdown</code>代码加入项目即可完成网站合并和生成工作，并参加到文档编写的工作中来。</p>
-<h2 id="什么是WoUI-web"><a href="#什么是WoUI-web" class="headerlink" title="什么是WoUI-web?"></a>什么是WoUI-web?</h2><p><code>WoUI-web</code>基于<code>hexo</code>核心包，在主题层面做了重构，同时借助<code>hexo</code>暴露的接口，封装了漂亮牛逼的<code>markdown</code>新语法来给高大尚的你们使用。</p>
+<h2 id="什么是WoUI-web"><a href="#什么是WoUI-web" class="headerlink" title="什么是WoUI-web?"></a>什么是WoUI-web?</h2><p><code>WoUI-web</code>基于<code>hexo</code>核心包，在主题层面做了重构，同时借助<code>hexo</code>暴露的接口，封装了漂亮牛逼的<code>markdown</code>新语法来给高大上的你们使用。</p>
 <h2 id="安装-1"><a href="#安装-1" class="headerlink" title="安装"></a>安装</h2><p>安装<code>WoUI-web</code>只需几分钟时间，若您在安装过程中遇到问题或无法找到解决方式，请通过企业微信联系王昊，我会尽力解决您的问题。</p>
 <h2 id="安装前提"><a href="#安装前提" class="headerlink" title="安装前提"></a>安装前提</h2><p>安装<code>WoUI-web</code>相当简单。然而在安装前，您必须检查电脑中是否已安装下列应用程序：</p>
 <ul>
@@ -166,10 +166,17 @@
 
 	function demoClick (el) {
 		return function () {
+			var button = el.querySelector('button');
+			var text = button.querySelector('span');
+			var icon = button.querySelector('.icon');
 			if(el.classList.contains('active')) {
 				el.classList.remove('active');
+				icon.classList.remove('active');
+				text.innerHTML = '显示代码';
 			}else {
 				el.classList.add('active');
+				icon.classList.add('active');
+				text.innerHTML = '隐藏代码';
 			}
 
 			console.log(el);
