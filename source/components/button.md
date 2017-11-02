@@ -21,7 +21,11 @@ title: 按钮
 
 基础的按钮用法。
 
-<button class="btn btn-blue">主要按钮</button><button class="btn btn-basic btn-blue">次要按钮</button><button class="btn btn-text btn-blue">文字按钮</button>
+{% html %}
+  <button class="btn btn-blue">主要按钮</button>
+  <button class="btn btn-basic btn-blue">次要按钮</button>
+  <button class="btn btn-text btn-blue">文字按钮</button>
+{% endhtml %}
 
 {% demo %}
 ``` html
@@ -41,7 +45,11 @@ title: 按钮
 
 按钮不可用状态。
 
-<button class="btn btn-blue is-disabled">主要按钮</button><button class="btn btn-basic btn-blue is-disabled">次要按钮</button><button class="btn btn-text btn-blue is-disabled">文字按钮</button>
+{% html %}
+  <button class="btn btn-blue is-disabled">主要按钮</button>
+  <button class="btn btn-basic btn-blue is-disabled">次要按钮</button>
+  <button class="btn btn-text btn-blue is-disabled">文字按钮</button>
+{% endhtml %}
 
 {% demo %}
 ``` html
@@ -62,7 +70,15 @@ title: 按钮
 不同的颜色倾向代表不同的提示。
 
 ### 默认显示颜色
-<button class="btn">默认按钮</button><button class="btn btn-blue">蓝色按钮</button><button class="btn btn-green">绿色按钮</button><button class="btn btn-orange">橙色按钮</button><button class="btn btn-red">红色按钮</button><button class="btn btn-purple">紫色按钮</button>
+
+{% html %}
+  <button class="btn">默认按钮</button>
+  <button class="btn btn-blue">蓝色按钮</button>
+  <button class="btn btn-green">绿色按钮</button>
+  <button class="btn btn-orange">橙色按钮</button>
+  <button class="btn btn-red">红色按钮</button>
+  <button class="btn btn-purple">紫色按钮</button>
+{% endhtml %}
 
 {% demo %}
 ``` html
@@ -88,7 +104,15 @@ title: 按钮
 {% enddemo %}
 
 ### hover显示颜色
-<button class="btn btn-basic">默认按钮</button><button class="btn btn-basic btn-blue">蓝色按钮</button><button class="btn btn-basic btn-green">绿色按钮</button><button class="btn btn-basic btn-orange">橙色按钮</button><button class="btn btn-basic btn-red">红色按钮</button><button class="btn btn-basic btn-purple">紫色按钮</button>
+
+{% html %}
+  <button class="btn btn-basic">默认按钮</button>
+  <button class="btn btn-basic btn-blue">蓝色按钮</button>
+  <button class="btn btn-basic btn-green">绿色按钮</button>
+  <button class="btn btn-basic btn-orange">橙色按钮</button>
+  <button class="btn btn-basic btn-red">红色按钮</button>
+  <button class="btn btn-basic btn-purple">紫色按钮</button>
+{% endhtml %}
 
 {% demo %}
 ``` html
@@ -114,7 +138,15 @@ title: 按钮
 {% enddemo %}
 
 ### 文字显示颜色
-<button class="btn btn-text">默认按钮</button><button class="btn btn-text btn-blue">蓝色按钮</button><button class="btn btn-text btn-green">绿色按钮</button><button class="btn btn-text btn-orange">橙色按钮</button><button class="btn btn-text btn-red">红色按钮</button><button class="btn btn-text btn-purple">紫色按钮</button>
+
+{% html %}
+  <button class="btn btn-text">默认按钮</button>
+  <button class="btn btn-text btn-blue">蓝色按钮</button>
+  <button class="btn btn-text btn-green">绿色按钮</button>
+  <button class="btn btn-text btn-orange">橙色按钮</button>
+  <button class="btn btn-text btn-red">红色按钮</button>
+  <button class="btn btn-text btn-purple">紫色按钮</button>
+{% endhtml %}
 
 {% demo %}
 ``` html
@@ -143,7 +175,19 @@ title: 按钮
 
 带图标的按钮可增强辨识度(有文字)或节省空间(无文字)。
 
-<button class="btn btn-primary btn-blue"><i class="icon icon-add"></i></button><button class="btn btn-primary btn-blue"><i class="icon icon-add"></i>文件</button><button class="btn btn-primary btn-blue">文件<i class="icon icon-add"></i></button>
+{% html %}
+  <button class="btn btn-primary btn-blue">
+    <i class="icon icon-add"></i>
+  </button>
+  <button class="btn btn-primary btn-blue">
+    <i class="icon icon-add"></i>
+    文件
+  </button>
+  <button class="btn btn-primary btn-blue">
+    文件
+    <i class="icon icon-add"></i>
+  </button>
+{% endhtml %}
 
 {% demo %}
 ``` html
@@ -165,7 +209,19 @@ title: 按钮
 
 圆形按钮内置图标。
 
-<button class="btn btn-circle btn-blue"><i class="icon icon-add"></i></button><button class="btn btn-circle btn-basic btn-blue"><i class="icon icon-add"></i></button><button class="btn btn-circle btn-blue is-disabled"><i class="icon icon-add"></i></button><button class="btn btn-circle btn-basic btn-blue is-disabled"><i class="icon icon-add"></i></button>
+{% html %}
+  <button class="btn btn-circle btn-blue">
+    <i class="icon icon-add"></i>
+  </button>
+  <button class="btn btn-circle btn-basic btn-blue">
+    <i class="icon icon-add"></i>
+  </button>
+  <button class="btn btn-circle btn-blue is-disabled">
+    <i class="icon icon-add"></i>
+  </button>
+  <button class="btn btn-circle btn-basic btn-blue is-disabled">  <i class="icon icon-add"></i>
+  </button>
+{% endhtml %}
 
 {% demo %}
 ``` html
@@ -188,7 +244,12 @@ title: 按钮
 
 Button 组件提供除了默认值以外的三种尺寸，可以在不同场景下选择合适的按钮尺寸。
 
-<button class="btn btn-blue btn-mini">迷你按钮</button><button class="btn btn-blue btn-small">小型按钮</button><button class="btn btn-blue">正常按钮</button><button class="btn btn-blue btn-large">大型按钮</button>
+{% html %}
+  <button class="btn btn-blue btn-mini">迷你按钮</button>
+  <button class="btn btn-blue btn-small">小型按钮</button>
+  <button class="btn btn-blue">正常按钮</button>
+  <button class="btn btn-blue btn-large">大型按钮</button>
+{% endhtml %}
 
 {% demo %}
 ``` html
@@ -207,7 +268,20 @@ Button 组件提供除了默认值以外的三种尺寸，可以在不同场景�
 ```
 {% enddemo %}
 
-<button class="btn btn-circle btn-blue btn-mini"><i class="icon icon-add"></i></button><button class="btn btn-circle btn-blue btn-small"><i class="icon icon-add"></i></button><button class="btn btn-circle btn-blue"><i class="icon icon-add"></i></button><button class="btn btn-circle btn-blue btn-large"><i class="icon icon-add"></i></button>
+{% html %}
+  <button class="btn btn-circle btn-blue btn-mini">
+    <i class="icon icon-add"></i>
+  </button>
+  <button class="btn btn-circle btn-blue btn-small">
+    <i class="icon icon-add"></i>
+  </button>
+  <button class="btn btn-circle btn-blue">
+    <i class="icon icon-add"></i>
+  </button>
+  <button class="btn btn-circle btn-blue btn-large">
+    <i class="icon icon-add"></i>
+  </button>
+{% endhtml %}
 
 {% demo %}
 ``` html
@@ -232,7 +306,15 @@ Button 组件提供除了默认值以外的三种尺寸，可以在不同场景�
 
 ### 横向按钮组
 
-<div class="btn-group"><button class="btn btn-primary btn-blue">主要按钮</button><i class="line-vertical"></i><button class="btn btn-primary btn-blue">主要按钮</button><i class="line-vertical"></i><button class="btn btn-primary btn-blue">主要按钮</button></div>
+{% html %}
+  <div class="btn-group">
+    <button class="btn btn-primary btn-blue">主要按钮</button>
+    <i class="line-vertical"></i>
+    <button class="btn btn-primary btn-blue">主要按钮</button>
+    <i class="line-vertical"></i>
+    <button class="btn btn-primary btn-blue">主要按钮</button>
+  </div>
+{% endhtml %}
 
 {% demo %}
 ``` html
@@ -252,7 +334,13 @@ Button 组件提供除了默认值以外的三种尺寸，可以在不同场景�
 ```
 {% enddemo %}
 
-<div class="btn-group"><button class="btn btn-basic btn-blue">次要按钮</button><button class="btn btn-basic btn-blue">次要按钮</button><button class="btn btn-basic btn-blue">次要按钮</button></div>
+{% html %}
+  <div class="btn-group">
+    <button class="btn btn-basic btn-blue">次要按钮</button>
+    <button class="btn btn-basic btn-blue">次要按钮</button>
+    <button class="btn btn-basic btn-blue">次要按钮</button>
+  </div>
+{% endhtml %}
 
 {% demo %}
 ``` html
@@ -270,7 +358,19 @@ Button 组件提供除了默认值以外的三种尺寸，可以在不同场景�
 ```
 {% enddemo %}
 
-<div class="btn-group"><button class="btn btn-primary btn-blue"><i class="icon icon-add is-left"></i>文件</button><i class="line-vertical"></i><button class="btn btn-primary btn-blue">文件<i class="icon icon-add is-right"></i></button></div>
+{% html %}
+  <div class="btn-group">
+    <button class="btn btn-primary btn-blue">
+      <i class="icon icon-add is-left"></i>
+      文件
+    </button>
+    <i class="line-vertical"></i>
+    <button class="btn btn-primary btn-blue">
+      文件
+      <i class="icon icon-add is-right"></i>
+    </button>
+  </div>
+{% endhtml %}
 
 {% demo %}
 ``` html
@@ -289,7 +389,25 @@ Button 组件提供除了默认值以外的三种尺寸，可以在不同场景�
 ```
 {% enddemo %}
 
-<div class="btn-group"><button class="btn btn-primary btn-blue"><i class="icon icon-add"></i></button><i class="line-vertical"></i><button class="btn btn-primary btn-blue"><i class="icon icon-add"></i></button><i class="line-vertical"></i><button class="btn btn-primary btn-blue"><i class="icon icon-add"></i></button><i class="line-vertical"></i><button class="btn btn-primary btn-blue"><i class="icon icon-add"></i></button></div>
+{% html %}
+  <div class="btn-group">
+    <button class="btn btn-primary btn-blue">
+      <i class="icon icon-add"></i>
+    </button>
+    <i class="line-vertical"></i>
+    <button class="btn btn-primary btn-blue">
+      <i class="icon icon-add"></i>
+    </button>
+    <i class="line-vertical"></i>
+    <button class="btn btn-primary btn-blue">
+      <i class="icon icon-add"></i>
+    </button>
+    <i class="line-vertical"></i>
+    <button class="btn btn-primary btn-blue">
+      <i class="icon icon-add"></i>
+    </button>
+  </div>
+{% endhtml %}
 
 {% demo %}
 ``` html
@@ -315,7 +433,15 @@ Button 组件提供除了默认值以外的三种尺寸，可以在不同场景�
 
 ### 竖直按钮组
 
-<div class="btn-vertical-group"><button class="btn btn-primary btn-blue">主要按钮</button><i class="line-horizontal"></i><button class="btn btn-primary btn-blue">主要按钮</button><i class="line-horizontal"></i><button class="btn btn-primary btn-blue">主要按钮</button></div>
+{% html %}
+  <div class="btn-vertical-group">
+    <button class="btn btn-primary btn-blue">主要按钮</button>
+    <i class="line-horizontal"></i>
+    <button class="btn btn-primary btn-blue">主要按钮</button>
+    <i class="line-horizontal"></i>
+    <button class="btn btn-primary btn-blue">主要按钮</button>
+  </div>
+{% endhtml %}
 
 {% demo %}
 ``` html
@@ -335,7 +461,13 @@ Button 组件提供除了默认值以外的三种尺寸，可以在不同场景�
 ```
 {% enddemo %}
 
-<div class="btn-vertical-group"><button class="btn btn-basic btn-blue">次要按钮</button><button class="btn btn-basic btn-blue">次要按钮</button><button class="btn btn-basic btn-blue">次要按钮</button></div>
+{% html %}
+  <div class="btn-vertical-group">
+    <button class="btn btn-basic btn-blue">次要按钮</button>
+    <button class="btn btn-basic btn-blue">次要按钮</button>
+    <button class="btn btn-basic btn-blue">次要按钮</button>
+  </div>
+{% endhtml %}
 
 {% demo %}
 ``` html
@@ -353,7 +485,19 @@ Button 组件提供除了默认值以外的三种尺寸，可以在不同场景�
 ```
 {% enddemo %}
 
-<div class="btn-vertical-group"><button class="btn btn-primary btn-blue"><i class="icon icon-add is-left"></i>文件</button><i class="line-horizontal"></i><button class="btn btn-primary btn-blue">文件<i class="icon icon-add is-right"></i></button></div>
+{% html %}
+  <div class="btn-vertical-group">
+    <button class="btn btn-primary btn-blue">
+      <i class="icon icon-add is-left"></i>
+      文件
+    </button>
+    <i class="line-horizontal"></i>
+    <button class="btn btn-primary btn-blue">
+      文件
+      <i class="icon icon-add is-right"></i>
+    </button>
+  </div>
+{% endhtml %}
 
 {% demo %}
 ``` html
@@ -371,8 +515,25 @@ Button 组件提供除了默认值以外的三种尺寸，可以在不同场景�
 ```
 {% enddemo %}
 
-<div class="btn-vertical-group"><button class="btn btn-primary btn-blue"><i class="icon icon-add"></i></button><i class="line-horizontal"></i><button class="btn btn-primary btn-blue"><i class="icon icon-add"></i></button><i class="line-horizontal"></i>
-<button class="btn btn-primary btn-blue"><i class="icon icon-add"></i></button><i class="line-horizontal"></i><button class="btn btn-primary btn-blue"><i class="icon icon-add"></i></button></div>
+{% html %}
+  <div class="btn-vertical-group">
+    <button class="btn btn-primary btn-blue">
+      <i class="icon icon-add"></i>
+    </button>
+    <i class="line-horizontal"></i>
+    <button class="btn btn-primary btn-blue">
+      <i class="icon icon-add"></i>
+    </button>
+    <i class="line-horizontal"></i>
+    <button class="btn btn-primary btn-blue">
+      <i class="icon icon-add"></i>
+    </button>
+    <i class="line-horizontal"></i>
+    <button class="btn btn-primary btn-blue">
+      <i class="icon icon-add"></i>
+    </button>
+  </div>
+{% endhtml %}
 
 {% demo %}
 ``` html

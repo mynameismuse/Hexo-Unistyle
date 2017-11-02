@@ -120,3 +120,22 @@ console.log('test');
 {% endscript %}
 ```
 
+## `html`语法
+
+在`markdown`中实现原生`html`嵌入的方式很简单，同样通过`tag injection`的方式将`html`代码嵌入生成器中，如果不使用`tag`方式，空格将会被解析器添加`<br>`处理，还可以通过合并代码的方式来实现`html`无换行解析。
+
+{% html %}
+<br>
+<button class="btn btn-blue">蓝色</button>
+<button class="btn btn-red">红色</button>
+<br>
+{% endhtml %}
+
+```
+{% html %}
+  <br>
+  <button class="btn btn-blue">蓝色</button>
+  <button class="btn btn-red">红色</button>
+  <br>
+{% endhtml %}
+```

@@ -37,3 +37,10 @@ hexo.extend.tag.register('script', function(args, content) {
 
 	return result;
 }, true);
+
+hexo.extend.tag.register('html', function(args, content) {
+	var result = '';
+	result += content;
+
+	return result;
+}, true);

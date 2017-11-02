@@ -11,6 +11,7 @@ components:
     最新更新: component.html
   基础组件:
     按钮: button.html
+    提示框: tooltip.html
 about:
   关于:
     开发团队: about.html
