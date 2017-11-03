@@ -18,6 +18,8 @@ hexo.extend.tag.register('note', function(args, content) {
 
 hexo.extend.tag.register('demo', function(args, content) {
 	var result = '';
+	var copyContent = content;
+	console.log(copyContent);
 
 	result += '<div class="demo">';
 	result += '<button class="demo-button"><i class="icon icon-arrow-down"></i><span>显示代码</span></button>';
