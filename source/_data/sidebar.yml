@@ -10,8 +10,13 @@ components:
   更新日志:
     最新更新: component.html
   基础组件:
+    快速上手: getting-started.html
     按钮: button.html
     提示框: tooltip.html
+    多选框: checkbox.html
+    多选框组: checkbox-group.html
+    标签页: tabs.html
+    分页: pagination.html
 about:
   关于:
     开发团队: about.html
