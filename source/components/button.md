@@ -34,7 +34,7 @@ title: 按钮
 </button>
 <button class="btn btn-basic btn-blue">
   次要按钮
-</button>
+</button>    
 <button class="btn btn-text btn-blue">
   文字按钮
 </button>

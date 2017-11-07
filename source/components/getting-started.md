@@ -71,8 +71,7 @@ woUI 组件库兼容 IE8（及以上）、chrome、firefox 等浏览器。在现
 <html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Tabs</title>
     <link rel="stylesheet" href="./woUI/woUI.min.css">
@@ -83,12 +82,12 @@ woUI 组件库兼容 IE8（及以上）、chrome、firefox 等浏览器。在现
     <!--[if lte IE 9]>
     <script src="./lib/ie.js"></script>
     <![endif]-->
-</head>
-<body>
-<div class="wrap">
-   content
-</div>
-<script src="../dist/Tabs/Tabs.min.js"></script>
-</body>
+  </head>
+  <body>
+    <div class="wrap">
+      content
+    </div>
+    <script src="../dist/Tabs/Tabs.min.js"></script>
+  </body>
 </html>
 ```

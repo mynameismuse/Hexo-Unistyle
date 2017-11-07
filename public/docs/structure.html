@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="en">
+	<head>
+    <meta charset="UTF-8">
+    <title>
+        
+        文档结构 | 
+        联通通用样式库
+    </title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+    <link rel="stylesheet" href="/css/woUI.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/Icon.min.css">
+    
+        <link rel="stylesheet" href="/css/page.css">
+    
+    <script type="text/javascript" src="/js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="/js/sidebar.min.js"></script>
+    <script src="/js/woUI.min.js"></script>
+</head>
+<body>
+	
+		
+		<div class="ui sidebar inverted vertical menu"><a class="item-title">菜单</a><a class="item" href="/docs/install.html">指南</a><a class="item" href="/components/getting-started.html">组件</a><a class="item" href="/resources/resource.html">资源</a><a class="item" href="/about/about.html">关于</a><br><a class="item-title">子菜单</a><a class="item" href="install.html">安装</a><a class="item" href="structure.html">文档结构</a><a class="item" href="new.html">新语法</a></div>
+	
+  <div class="main">
+      <div class="headerWrapper">
+	<div class="header header-home">
+		<div class="container">
+			<h1 class="logo">
+				<a href="/">
+					
+						<img src="/img/logo-2@2x.png">
+					
+				</a>
+			</h1>
+			<ul class="nav">
+				
+				<li class="nav-item"><a href="/docs/install.html">指南</a></li><li class="nav-item"><a href="/components/getting-started.html">组件</a></li><li class="nav-item"><a href="/resources/resource.html">资源</a></li><li class="nav-item"><a href="/about/about.html">关于</a></li>
+				<li class="nav-item mobile" id="mobile-icon">
+					<a>
+						
+							<img src="/img/sidebar-white.png">
+						
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div class="contentWrapper">
+	<div class="container">
+		<div class="content-inner">
+			<article class="article-container">
+				<div class="article-inner">
+					<div class="article">
+						<h1 id="文档结构"><a href="#文档结构" class="headerlink" title="文档结构"></a>文档结构</h1><blockquote class="note info"><strong class="note-title">文档维护人: 王昊</strong></blockquote>
+<p>项目结构包含了多个文件夹和配置文件，接下来将详细讲解每个文件夹的用途和配置信息。</p>
+<h2 id="根文件结构"><a href="#根文件结构" class="headerlink" title="根文件结构"></a>根文件结构</h2><p>项目的根文件结构。</p>
+<table>
+<thead>
+<tr>
+<th>文件名</th>
+<th>用途</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>_config.yml</code></td>
+<td><code>hexo</code>配置文件</td>
+</tr>
+<tr>
+<td><code>source</code></td>
+<td>资源文件夹</td>
+</tr>
+<tr>
+<td><code>themes</code></td>
+<td>主题文件夹</td>
+</tr>
+</tbody>
+</table>
+<p><code>_config.yml</code>配置了hexo的相关配置项，如愿了解请访问<a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="external">官方网站</a>。</p>
+<h2 id="source文件夹"><a href="#source文件夹" class="headerlink" title="source文件夹"></a><code>source</code>文件夹</h2><p><code>source</code>文件夹结构。</p>
+<table>
+<thead>
+<tr>
+<th>文件名</th>
+<th>用途</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>_data</code></td>
+<td>菜单配置和侧边栏配置</td>
+</tr>
+<tr>
+<td><code>docs</code></td>
+<td>存放指南相关<code>markdown</code></td>
+</tr>
+<tr>
+<td><code>resource</code></td>
+<td>存放资源相关<code>markdown</code></td>
+</tr>
+<tr>
+<td><code>component</code></td>
+<td>存放组件相关<code>markdown</code></td>
+</tr>
+<tr>
+<td><code>about</code></td>
+<td>存放关于相关<code>markdown</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="data文件夹"><a href="#data文件夹" class="headerlink" title="_data文件夹"></a><code>_data</code>文件夹</h2><p>菜单配置项和侧边栏配置。</p>
+<table>
+<thead>
+<tr>
+<th>文件名</th>
+<th>用途</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>menu.yml</code></td>
+<td><code>nav</code>标题栏<code>item</code>配置</td>
+</tr>
+<tr>
+<td><code>sidebar.yml</code></td>
+<td>每个菜单中侧边栏标题配置</td>
+</tr>
+</tbody>
+</table>
+<blockquote class="note info"><strong class="note-title">menu.yml</strong><p><code>menu.yml</code>中的配置项需要对应<code>source</code>中的文件夹名称，文件夹可以持续创建并参与配置。</p>
+</blockquote>
+<blockquote class="note info"><strong class="note-title">menu.yml</strong><p><code>sidebar.yml</code>中的配置项需要对应<code>menu.yml</code>中配置的文件夹内<code>markdown</code>名称同时以<code>html</code>作为后缀。</p>
+</blockquote>
+<h2 id="themes文件夹"><a href="#themes文件夹" class="headerlink" title="themes文件夹"></a><code>themes</code>文件夹</h2><p><code>themes</code>文件夹结构。</p>
+<table>
+<thead>
+<tr>
+<th>文件夹</th>
+<th>用途</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>muse</code></td>
+<td><code>WoUI-web</code>自定义主题包</td>
+</tr>
+</tbody>
+</table>
+<h2 id="muse文件夹"><a href="#muse文件夹" class="headerlink" title="muse文件夹"></a><code>muse</code>文件夹</h2><p><code>muse</code>文件夹结构。</p>
+<table>
+<thead>
+<tr>
+<th>文件名</th>
+<th>用途</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>_config.yml</code></td>
+<td><code>muse</code>主题配置文件</td>
+</tr>
+<tr>
+<td><code>layout</code></td>
+<td><code>ejs</code>模板</td>
+</tr>
+<tr>
+<td><code>scripts</code></td>
+<td><code>hexo</code>扩展<code>js</code>模块 </td>
+</tr>
+<tr>
+<td><code>source</code></td>
+<td><code>css</code> 和 <code>图片</code> 资源</td>
+</tr>
+</tbody>
+</table>
+<h2 id="config-yml文件"><a href="#config-yml文件" class="headerlink" title="_config.yml文件"></a><code>_config.yml</code>文件</h2><p><code>muse</code>主题配置文件，详细说明请参看文件内注释。</p>
+
+					</div>
+					<div class="article-toc">
+						<div class="article-toc-inner">
+							<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#文档结构"><span class="toc-text">文档结构</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#根文件结构"><span class="toc-text">根文件结构</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#source文件夹"><span class="toc-text">source文件夹</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#data文件夹"><span class="toc-text">_data文件夹</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#themes文件夹"><span class="toc-text">themes文件夹</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#muse文件夹"><span class="toc-text">muse文件夹</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#config-yml文件"><span class="toc-text">_config.yml文件</span></a></li></ol></li></ol>
+						</div>
+					</div>
+				</div>
+			</article>
+			<aside class="sidebar">
+				<div class="inner">
+					
+					<strong class="sidebar-title">开发指南</strong><a class="sidebar-link"" href="install.html">安装</a><a class="sidebar-link current"" href="structure.html">文档结构</a><a class="sidebar-link"" href="new.html">新语法</a>
+				</div>
+			</aside>
+		</div>
+	</div>
+</div>
+<div class="footerWrapper">
+	<div class="container">
+		<div class="footer-main">
+			<p class="footer-main-title">
+				WoUI 1.0 Alpha Version
+			</p>
+			<p class="footer-main-desc">Powered By 庙里的王和尚</p>
+		</div>
+		<div class="footer-social">
+			<a href="http://192.168.7.53:3000/woUI/woUI">
+				<img src="/img/github@2x.png">
+			</a>
+		</div>
+	</div>
+</div>
+<script>
+	//定义文章根元素
+	var content = document.querySelector('.article')
+	//查询所有h2标题
+	var h2 = content.querySelectorAll('h2');
+	for(var i = 0, length = h2.length; i < length; i++) {
+		var a = h2[i].querySelector('a');
+		var outWrap = document.createElement('a');
+		outWrap.id = '#' + h2[i].id;
+		content.insertBefore(outWrap,h2[i]);
+		outWrap.appendChild(h2[i]);
+
+		var link = document.createElement('a');
+		link.innerHTML = '#';
+		link.href = '#' + h2[i].id;
+		link.className = 'header-link';
+		h2[i].appendChild(link);
+	}	
+
+	//查询所有h3标题
+	var h3 = content.querySelectorAll('h3');
+	for(var i = 0, length = h3.length; i < length; i++) {
+		var a = h3[i].querySelector('a');
+		var outWrap = document.createElement('a');
+		outWrap.id = '#' + h3[i].id;
+		outWrap.style.position = 'relative';
+		content.insertBefore(outWrap, h3[i]);
+		outWrap.appendChild(h3[i]);
+
+		var link = document.createElement('a');
+		link.innerHTML = '#';
+		link.href = '#' + h3[i].id;
+		link.className = 'header-link';
+		h3[i].appendChild(link);
+	}
+
+	//toc置顶
+	var toc = document.querySelector('.article-toc');
+	var header = document.querySelector('.headerWrapper');
+	var headerHeight = header.clientHeight;
+
+	window.addEventListener('scroll', function() {
+
+		var scrollTop = document.scrollingElement.scrollTop;
+
+		if(scrollTop > headerHeight) {
+			toc.className = 'article-toc fixed';
+		}else {
+			toc.className = 'article-toc';
+		}
+	});
+
+	//代码块提取
+	var demos = document.querySelectorAll('.demo');
+	for(var i = 0, length = demos.length; i < length; i++) {
+
+		var button = demos[i].querySelector('button');
+			
+		var click = demoClick(demos[i]);
+		button.addEventListener('click', click);
+	}
+
+	function demoClick (el) {
+		return function () {
+			var button = el.querySelector('button');
+			var text = button.querySelector('span');
+			var icon = button.querySelector('.icon');
+			if(el.classList.contains('active')) {
+				el.classList.remove('active');
+				icon.classList.remove('active');
+				text.innerHTML = '显示代码';
+			}else {
+				el.classList.add('active');
+				icon.classList.add('active');
+				text.innerHTML = '隐藏代码';
+			}
+
+			console.log(el);
+		}
+	}
+
+	window.addEventListener('scroll', updateSidebar);
+
+	function updateSidebar() {
+		var doc = document.documentElement;
+		var article =document.querySelector('.article');
+		var allHeaders = article.querySelectorAll('h1, h2, h3');
+		var top = doc && doc.scrollTop || document.body.scrollTop;
+		var last;
+		var index;
+
+		for (var i = 0; i < allHeaders.length; i++) {
+			var link = allHeaders[i];
+			if(link.offsetTop > top + 80) {
+				last = link;
+				index = i;
+				break;
+			}
+		}
+
+		if(last) {
+			setActive(last, index);
+		}
+	}
+
+	function setActive(el, index) {
+		var previousActive = document.querySelector('.toc-link.active');
+		var subTitles = document.querySelectorAll('.toc-text');
+
+		if(previousActive) {
+			previousActive.classList.remove('active');
+		}
+
+		if(typeof index == 'number') {
+			subTitles[index].parentNode.classList.add('active');
+		}
+	}
+</script>
+
+
+
+
+
+
+
+
+
+
+  </div>
+</body>
+<script type="text/javascript">
+	console.log('敢偷看我代码!! 发现问题你知道找谁吗？ 你需要联系王昊,你知道吗？ 以后没有我的允许, 不许看我代码!!!!');
+
+	var mobileIcon = document.getElementById('mobile-icon');
+	mobileIcon.addEventListener('click', function() {
+		$('.ui.sidebar')
+		  .sidebar('toggle')
+		;
+	});
+</script>
+</html>
