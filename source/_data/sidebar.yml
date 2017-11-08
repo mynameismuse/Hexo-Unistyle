@@ -17,6 +17,7 @@ components:
     多选框组: checkbox-group.html
     标签页: tabs.html
     分页: pagination.html
+    日期选择器: datepicker.html
 about:
   关于:
     开发团队: about.html
