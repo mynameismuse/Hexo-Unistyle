@@ -60,7 +60,7 @@ const Tabs = require('./dist/Tabs')
 
 ## 兼容性
 
-woUI 组件库兼容 IE8（及以上）、chrome、firefox 等浏览器。在现代浏览器中，体验会更加。
+woUI 组件库兼容 IE8（及以上）、chrome、firefox 等浏览器。在现代浏览器中，体验会更佳。
 
 在 IE8、IE9中，会存在一些非标准的语法，我们可以针对他们进行补丁。
 
