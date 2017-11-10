@@ -1,0 +1,449 @@
+<!doctype html>
+<html lang="en">
+	<head>
+    <meta charset="UTF-8">
+    <title>
+        
+        文字提示 | 
+        联通通用样式库
+    </title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+    <link rel="stylesheet" type="text/css" href="/css/Icon.min.css">
+    
+        <link rel="stylesheet" href="/css/page.css">
+    
+    
+    <link rel="stylesheet" href="/css/woUI.min.css">
+    <script type="text/javascript" src="/js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="/js/sidebar.min.js"></script>
+    <script type="text/javascript" src="/js/woUI.min.js"></script>
+</head>
+<body>
+	
+		
+		<div class="ui sidebar inverted vertical menu"><a class="item-title">菜单</a><a class="item" href="/docs/install.html">指南</a><a class="item" href="/components/getting-started.html">组件</a><a class="item" href="/resources/resource.html">资源</a><a class="item" href="/about/about.html">关于</a><br><a class="item-title">子菜单</a><a class="item" href="component.html">最新更新</a><a class="item" href="getting-started.html">快速上手</a><a class="item" href="button.html">按钮</a><a class="item" href="breadcrumb.html">面包屑</a><a class="item" href="avatar.html">图片</a><a class="item" href="tooltip.html">提示框</a><a class="item" href="menu.html">菜单</a><a class="item" href="checkbox.html">多选框</a><a class="item" href="checkbox-group.html">多选框组</a><a class="item" href="tabs.html">标签页</a><a class="item" href="pagination.html">分页</a><a class="item" href="datepicker.html">日期选择器</a></div>
+	
+  <div class="main">
+      <div class="headerWrapper">
+	<div class="header header-home">
+		<div class="container">
+			<h1 class="logo">
+				<a href="/">
+					
+						<img src="/img/woui-logo-white@2x.png">
+					
+				</a>
+			</h1>
+			<ul class="nav">
+				
+				<li class="nav-item"><a href="/docs/install.html">指南</a></li><li class="nav-item"><a href="/components/getting-started.html">组件</a></li><li class="nav-item"><a href="/resources/resource.html">资源</a></li><li class="nav-item"><a href="/about/about.html">关于</a></li>
+				<li class="nav-item mobile" id="mobile-icon">
+					<a>
+						
+							<img src="/img/sidebar-white.png">
+						
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div class="contentWrapper">
+	<div class="container">
+		<div class="content-inner">
+			<article class="article-container">
+				<div class="article-inner">
+					<div class="article">
+						<style>
+  .box {
+     width: 400px;
+     margin: auto;
+     padding-top:50px;
+  }
+  .top {
+     text-align: center;
+  }
+  .top button{
+      display:inline-block;
+  }
+  .bottom {
+     margin-top: 100px;
+     text-align: center;
+  }
+  .left {
+     float: left;
+  }
+  .left button {
+     display: block;
+     margin-top:4px;
+  }
+  .right {
+     float: right;
+  }
+  .right button {
+     display: block;
+     margin-top:4px;
+  }
+  .theme, .content{
+     width:50px;
+     padding-top:15px;
+  }
+  .theme button,.content button{
+     display:block;
+     margin-top:10px;
+  }
+  }
+</style>
+
+<h1 id="文字提示"><a href="#文字提示" class="headerlink" title="文字提示"></a>文字提示</h1><p>常用于展示鼠标hover时提示的信息。</p>
+<h2 id="基础用法"><a href="#基础用法" class="headerlink" title="基础用法"></a>基础用法</h2><p>Tooltip组件提供了9个展示位置。包括：<code>top-left</code>上左侧,<code>top</code>正上方,<code>top-right</code>上右侧,<code>right-top</code>右上方,<code>right</code>正右侧,<code>right-bottom</code>右下方,<code>bottom-right</code>下右侧,<code>bottom</code>正下方,<code>bottom-left</code>下左侧,<code>left-bottom</code>左下方,<code>left</code>正左侧,<code>left-top</code>左上方。</p>
+<div class="box"><div class="top"><button id="tooltip1" class="btn btn-basic btn-blue">上左</button> <button id="tooltip2" class="btn btn-basic btn-blue">上边</button> <button id="tooltip3" class="btn btn-basic btn-blue">上右</button></div><div class="right"><button id="tooltip4" class="btn btn-basic btn-blue">右上</button><button id="tooltip5" class="btn btn-basic btn-blue">右边</button><button id="tooltip6" class="btn btn-basic btn-blue">右下</button></div><div class="left"><button id="tooltip7" class="btn btn-basic btn-blue">左上</button><button id="tooltip8" class="btn btn-basic btn-blue">左边</button><button id="tooltip9" class="btn btn-basic btn-blue">左下</button></div><div class="bottom"><button id="tooltip10" class="btn btn-basic btn-blue">下左</button> <button id="tooltip11" class="btn btn-basic btn-blue">下边</button> <button id="tooltip12" class="btn btn-basic btn-blue">下右</button></div></div>
+
+<div class="demo"><button class="demo-button"><i class="icon icon-arrow-down"></i><span>显示代码</span></button><div class="demo-content"><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">button</span> <span class="attr">id</span>=<span class="string">"tooltip1"</span> <span class="attr">class</span>=<span class="string">"btn btn-basic btn-blue"</span>&gt;</span>上左<span class="tag">&lt;/<span class="name">button</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">button</span> <span class="attr">id</span>=<span class="string">"tooltip2"</span> <span class="attr">class</span>=<span class="string">"btn btn-basic btn-blue"</span>&gt;</span>上边<span class="tag">&lt;/<span class="name">button</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">button</span> <span class="attr">id</span>=<span class="string">"tooltip3"</span> <span class="attr">class</span>=<span class="string">"btn btn-basic btn-blue"</span>&gt;</span>上右<span class="tag">&lt;/<span class="name">button</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">button</span> <span class="attr">id</span>=<span class="string">"tooltip4"</span> <span class="attr">class</span>=<span class="string">"btn btn-basic btn-blue"</span>&gt;</span>右上<span class="tag">&lt;/<span class="name">button</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">button</span> <span class="attr">id</span>=<span class="string">"tooltip5"</span> <span class="attr">class</span>=<span class="string">"btn btn-basic btn-blue"</span>&gt;</span>右边<span class="tag">&lt;/<span class="name">button</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">button</span> <span class="attr">id</span>=<span class="string">"tooltip6"</span> <span class="attr">class</span>=<span class="string">"btn btn-basic btn-blue"</span>&gt;</span>右下<span class="tag">&lt;/<span class="name">button</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">button</span> <span class="attr">id</span>=<span class="string">"tooltip7"</span> <span class="attr">class</span>=<span class="string">"btn btn-basic btn-blue"</span>&gt;</span>左上<span class="tag">&lt;/<span class="name">button</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">button</span> <span class="attr">id</span>=<span class="string">"tooltip8"</span> <span class="attr">class</span>=<span class="string">"btn btn-basic btn-blue"</span>&gt;</span>左边<span class="tag">&lt;/<span class="name">button</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">button</span> <span class="attr">id</span>=<span class="string">"tooltip9"</span> <span class="attr">class</span>=<span class="string">"btn btn-basic btn-blue"</span>&gt;</span>左下<span class="tag">&lt;/<span class="name">button</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">button</span> <span class="attr">id</span>=<span class="string">"tooltip10"</span> <span class="attr">class</span>=<span class="string">"btn btn-basic btn-blue"</span>&gt;</span>下左<span class="tag">&lt;/<span class="name">button</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">button</span> <span class="attr">id</span>=<span class="string">"tooltip11"</span> <span class="attr">class</span>=<span class="string">"btn btn-basic btn-blue"</span>&gt;</span>下边<span class="tag">&lt;/<span class="name">button</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">button</span> <span class="attr">id</span>=<span class="string">"tooltip12"</span> <span class="attr">class</span>=<span class="string">"btn btn-basic btn-blue"</span>&gt;</span>下右<span class="tag">&lt;/<span class="name">button</span>&gt;</span></div></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> TooltipName = <span class="keyword">new</span> woUI.Tooltip(&#123; </div><div class="line">     el:   'id或者classname名 just like ('#tooltip1' or '.btn')',</div><div class="line">     html: <span class="string">'提示框内的内容 just like ('</span>上左<span class="string">' or '</span>上边<span class="string">' 等)'</span>,</div><div class="line">     type: <span class="string">'提示框所在的位置 just like ('</span>top-left<span class="string">' or '</span>top<span class="string">' 等)'</span>,</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+</div></div>
+<h2 id="主题"><a href="#主题" class="headerlink" title="主题"></a>主题</h2><p>Tooltip组件提供了自定义主题，参数包括：<code>boxBorderColor</code>(<code>tooltip</code>的边框颜色)、<code>BoxBgColor</code>(tooltip的背景颜色)和<code>BoxTextColor</code>(<code>tooltip</code>内的字体颜色）。</p>
+<div class="theme"><button id="tooltip13" class="btn btn-basic btn-blue">默认效果</button> <button id="tooltip14" class="btn btn-basic btn-blue">自定义主题</button> <button id="tooltip15" class="btn btn-basic btn-blue">自定义主题</button></div>
+
+<div class="demo"><button class="demo-button"><i class="icon icon-arrow-down"></i><span>显示代码</span></button><div class="demo-content"><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">button</span> <span class="attr">id</span>=<span class="string">"tooltip13"</span> <span class="attr">class</span>=<span class="string">"btn btn-basic btn-blue"</span>&gt;</span>默认效果<span class="tag">&lt;/<span class="name">button</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">button</span> <span class="attr">id</span>=<span class="string">"tooltip14"</span> <span class="attr">class</span>=<span class="string">"btn btn-basic btn-blue"</span>&gt;</span>自定义主题<span class="tag">&lt;/<span class="name">button</span>&gt;</span> </div><div class="line"><span class="tag">&lt;<span class="name">button</span> <span class="attr">id</span>=<span class="string">"tooltip15"</span> <span class="attr">class</span>=<span class="string">"btn btn-basic btn-blue"</span>&gt;</span>自定义主题<span class="tag">&lt;/<span class="name">button</span>&gt;</span></div></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> Tooltip13 = <span class="keyword">new</span> woUI.Tooltip(&#123;</div><div class="line">  el: <span class="string">'#tooltip13'</span>,</div><div class="line">  html: <span class="string">'您的密码无法正常输入'</span>,</div><div class="line">  type: <span class="string">'right'</span>,</div><div class="line">&#125;)</div><div class="line"></div><div class="line"><span class="keyword">var</span> Tooltip14 = <span class="keyword">new</span> woUI.Tooltip(&#123;</div><div class="line">  el: <span class="string">'#tooltip14'</span>,</div><div class="line">  html: <span class="string">'您的密码无法正常输入'</span>,</div><div class="line">  type: <span class="string">'right'</span>,</div><div class="line">  boxBorderColor:<span class="string">'#000'</span>,</div><div class="line">  BoxBgColor:<span class="string">'#666'</span>,</div><div class="line">  BoxTextColor:<span class="string">'#fff'</span>,</div><div class="line">&#125;)</div><div class="line"></div><div class="line"><span class="keyword">var</span> Tooltip15 = <span class="keyword">new</span> woUI.Tooltip(&#123;</div><div class="line">  el: <span class="string">'#tooltip15'</span>,</div><div class="line">  html: <span class="string">'您的密码无法正常输入'</span>,</div><div class="line">  type: <span class="string">'right'</span>,</div><div class="line">  boxBorderColor:<span class="string">'#C1E9F5'</span>,</div><div class="line">  BoxBgColor:<span class="string">'#F4FCFF'</span>,</div><div class="line">  BoxTextColor:<span class="string">'#666'</span>,</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+</div></div>
+<h2 id="内容扩展"><a href="#内容扩展" class="headerlink" title="内容扩展"></a>内容扩展</h2><p>Tooltip组件提供了自定义内容，可以是文字，也可以是图片。</p>
+<div class="content"><button id="tooltip16" class="btn btn-basic btn-blue">自定义内容（文字）</button><button id="tooltip17" class="btn btn-basic btn-blue">自定义内容（图片）</button></div>
+
+<div class="demo"><button class="demo-button"><i class="icon icon-arrow-down"></i><span>显示代码</span></button><div class="demo-content"><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">button</span> <span class="attr">id</span>=<span class="string">"tooltip16"</span> <span class="attr">class</span>=<span class="string">"btn btn-basic btn-blue"</span>&gt;</span>自定义内容（文字）<span class="tag">&lt;/<span class="name">button</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">button</span> <span class="attr">id</span>=<span class="string">"tooltip17"</span> <span class="attr">class</span>=<span class="string">"btn btn-basic btn-blue"</span>&gt;</span>自定义内容（图片）<span class="tag">&lt;/<span class="name">button</span>&gt;</span></div></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> Tooltip16 = <span class="keyword">new</span> woUI.Tooltip(&#123;</div><div class="line">    el: <span class="string">'#tooltip16'</span>,</div><div class="line">    html: <span class="string">'浮层内容文案'</span>,</div><div class="line">    type: <span class="string">'right'</span></div><div class="line">&#125;)  </div><div class="line"><span class="keyword">var</span> Tooltip17 = <span class="keyword">new</span> woUI.Tooltip(&#123;</div><div class="line">    el: <span class="string">'#tooltip17'</span>,</div><div class="line">    html: <span class="string">'&lt;img src="image/二维码.png"&gt;'</span>,</div><div class="line">    type: <span class="string">'right-top'</span>,</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+</div></div>
+<h2 id="属性"><a href="#属性" class="headerlink" title="属性"></a>属性</h2><table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+<th>类型</th>
+<th>可选值</th>
+<th>默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>放置（type）</td>
+<td>tooltip出现的位置</td>
+<td>串</td>
+<td>顶/顶开始/顶端/底/底开始/底端/左/左开始/左端/右/右启动/右端</td>
+<td>右</td>
+</tr>
+<tr>
+<td>el</td>
+<td>元素名称</td>
+<td>串</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>html</td>
+<td>tooltip框内容</td>
+<td>串</td>
+<td>文字或者插入图片</td>
+<td></td>
+</tr>
+<tr>
+<td>boxBorderColor</td>
+<td>tooltip框的边框颜色</td>
+<td>串</td>
+<td>所有颜色</td>
+<td>#E0E0E0</td>
+</tr>
+<tr>
+<td>BoxBgColor</td>
+<td>tooltip框的背景颜色</td>
+<td>串</td>
+<td>所有颜色</td>
+<td>#fffff</td>
+</tr>
+<tr>
+<td>BoxTextColor</td>
+<td>tooltip框的文字颜色</td>
+<td>串</td>
+<td>所有颜色</td>
+<td>#666666</td>
+</tr>
+</tbody>
+</table>
+<script type="text/javascript">var Tooltip1 = new woUI.Tooltip({
+  el: '#tooltip1',
+  html: '上左',
+  type: 'top-left',
+})
+  
+var Tooltip2 = new woUI.Tooltip({
+  el: '#tooltip2',
+  html: '上边',
+  type: 'top',
+})
+
+var Tooltip3 = new woUI.Tooltip({
+  el: '#tooltip3',
+  html: '上右',
+  type: 'top-right',
+})
+
+var Tooltip4 = new woUI.Tooltip({
+  el: '#tooltip4',
+  html: '右上',
+  type: 'right-top',
+})
+
+var Tooltip5 = new woUI.Tooltip({
+  el: '#tooltip5',
+  html: '右边',
+  type: 'right',
+})
+
+var Tooltip6 = new woUI.Tooltip({
+  el: '#tooltip6',
+  html: '右下',
+  type: 'right-bottom',
+})
+
+var Tooltip7 = new woUI.Tooltip({
+  el: '#tooltip7',
+  html: '右上',
+  type: 'left-top',
+})
+
+var Tooltip8 = new woUI.Tooltip({
+  el: '#tooltip8',
+  html: '右边',
+  type: 'left',
+})
+
+var Tooltip9 = new woUI.Tooltip({
+  el: '#tooltip9',
+  html: '右下',
+  type: 'left-bottom',
+})
+
+var Tooltip10 = new woUI.Tooltip({
+  el: '#tooltip10',
+  html: '右上',
+  type: 'bottom-left',
+})
+
+var Tooltip11 = new woUI.Tooltip({
+  el: '#tooltip11',
+  html: '右边',
+  type: 'bottom',
+})
+
+var Tooltip12 = new woUI.Tooltip({
+  el: '#tooltip12',
+  html: '右下',
+  type: 'bottom-right',
+})
+
+var Tooltip13 = new woUI.Tooltip({
+  el: '#tooltip13',
+  html: '浮层内容文案',
+})
+
+var Tooltip14 = new woUI.Tooltip({
+  el: '#tooltip14',
+  html: '浮层内容文案',
+  boxBorderColor:'#666',
+  BoxBgColor:'#666',
+  BoxTextColor:'#fff',
+})
+
+var Tooltip15 = new woUI.Tooltip({
+  el: '#tooltip15',
+  html: '浮层内容文案',
+  boxBorderColor:'#C1E9F5',
+  BoxBgColor:'#F4FCFF',
+  BoxTextColor:'#666',
+})
+
+var Tooltip16 = new woUI.Tooltip({
+  el: '#tooltip16',
+  html: '浮层内容文案',
+})
+ 
+var Tooltip17 = new woUI.Tooltip({
+  el: '#tooltip17',
+  html: '<img src="image/二维码.png">',
+  type: 'right-top',
+})  </script>
+
+					</div>
+					<div class="article-toc">
+						<div class="article-toc-inner">
+							<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#文字提示"><span class="toc-text">文字提示</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#基础用法"><span class="toc-text">基础用法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#主题"><span class="toc-text">主题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#内容扩展"><span class="toc-text">内容扩展</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#属性"><span class="toc-text">属性</span></a></li></ol></li></ol>
+						</div>
+					</div>
+				</div>
+			</article>
+			<aside class="sidebar">
+				<div class="inner">
+					
+					<strong class="sidebar-title">更新日志</strong><a class="sidebar-link"" href="component.html">最新更新</a><strong class="sidebar-title">基础组件</strong><a class="sidebar-link"" href="getting-started.html">快速上手</a><a class="sidebar-link"" href="button.html">按钮</a><a class="sidebar-link"" href="breadcrumb.html">面包屑</a><a class="sidebar-link"" href="avatar.html">图片</a><a class="sidebar-link current"" href="tooltip.html">提示框</a><a class="sidebar-link"" href="menu.html">菜单</a><a class="sidebar-link"" href="checkbox.html">多选框</a><a class="sidebar-link"" href="checkbox-group.html">多选框组</a><a class="sidebar-link"" href="tabs.html">标签页</a><a class="sidebar-link"" href="pagination.html">分页</a><a class="sidebar-link"" href="datepicker.html">日期选择器</a>
+				</div>
+			</aside>
+		</div>
+	</div>
+</div>
+<div class="footerWrapper">
+	<div class="container">
+		<div class="footer-main">
+			<p class="footer-main-title">
+				WoUI 1.0 Alpha Version
+			</p>
+			<p class="footer-main-desc">Powered By 联通支付用户体验设计中心</p>
+		</div>
+		<div class="footer-social">
+			<a href="http://192.168.7.53:3000/woUI/woUI">
+				<img src="/img/github@2x.png">
+			</a>
+		</div>
+	</div>
+</div>
+<script>
+	//定义文章根元素
+	var content = document.querySelector('.article')
+	//查询所有h2标题
+	// var h2 = content.querySelectorAll('h2');
+	// for(var i = 0, length = h2.length; i < length; i++) {
+	// 	var a = h2[i].querySelector('a');
+	// 	var outWrap = document.createElement('a');
+	// 	outWrap.id = '#' + h2[i].id;
+	// 	content.insertBefore(outWrap,h2[i]);
+	// 	outWrap.appendChild(h2[i]);
+
+	// 	var link = document.createElement('a');
+	// 	link.innerHTML = '#';
+	// 	link.href = '#' + h2[i].id;
+	// 	link.className = 'header-link';
+	// 	h2[i].appendChild(link);
+	// }	
+
+	//查询所有h3标题
+	// var h3 = content.querySelectorAll('h3');
+	// for(var i = 0, length = h3.length; i < length; i++) {
+	// 	var a = h3[i].querySelector('a');
+	// 	var outWrap = document.createElement('a');
+	// 	outWrap.id = '#' + h3[i].id;
+	// 	outWrap.style.position = 'relative';
+	// 	content.insertBefore(outWrap, h3[i]);
+	// 	outWrap.appendChild(h3[i]);
+
+	// 	var link = document.createElement('a');
+	// 	link.innerHTML = '#';
+	// 	link.href = '#' + h3[i].id;
+	// 	link.className = 'header-link';
+	// 	h3[i].appendChild(link);
+	// }
+
+	//toc置顶
+	var toc = document.querySelector('.article-toc');
+	var header = document.querySelector('.headerWrapper');
+	var headerHeight = header.clientHeight;
+
+	window.addEventListener('scroll', function() {
+
+		var scrollTop = document.scrollingElement.scrollTop;
+
+		if(scrollTop > headerHeight) {
+			toc.className = 'article-toc fixed';
+		}else {
+			toc.className = 'article-toc';
+		}
+	});
+
+	//代码块提取
+	var demos = document.querySelectorAll('.demo');
+	for(var i = 0, length = demos.length; i < length; i++) {
+
+		var button = demos[i].querySelector('button');
+			
+		var click = demoClick(demos[i]);
+		button.addEventListener('click', click);
+	}
+
+	function demoClick (el) {
+		return function () {
+			var button = el.querySelector('button');
+			var text = button.querySelector('span');
+			var icon = button.querySelector('.icon');
+			if(el.classList.contains('active')) {
+				el.classList.remove('active');
+				icon.classList.remove('active');
+				text.innerHTML = '显示代码';
+			}else {
+				el.classList.add('active');
+				icon.classList.add('active');
+				text.innerHTML = '隐藏代码';
+			}
+
+			console.log(el);
+		}
+	}
+
+	window.addEventListener('scroll', updateSidebar);
+
+	function updateSidebar() {
+		var doc = document.documentElement;
+		var article =document.querySelector('.article');
+		var allHeaders = article.querySelectorAll('h1, h2, h3');
+		var top = doc && doc.scrollTop || document.body.scrollTop;
+		var last;
+		var index;
+
+		for (var i = 0; i < allHeaders.length; i++) {
+			var link = allHeaders[i];
+			if(link.offsetTop > top + 80) {
+				last = link;
+				index = i;
+				break;
+			}
+		}
+
+		if(last) {
+			setActive(last, index);
+		}
+	}
+
+	function setActive(el, index) {
+		var previousActive = document.querySelector('.toc-link.active');
+		var subTitles = document.querySelectorAll('.toc-text');
+
+		if(previousActive) {
+			previousActive.classList.remove('active');
+		}
+
+		if(typeof index == 'number') {
+			subTitles[index].parentNode.classList.add('active');
+		}
+	}
+</script>
+
+
+
+
+
+
+
+
+
+
+  </div>
+</body>
+<script type="text/javascript">
+	console.log('敢偷看我代码!! 发现问题你知道找谁吗？ 你需要联系王昊,你知道吗？ 以后没有我的允许, 不许看我代码!!!!');
+
+	var mobileIcon = document.getElementById('mobile-icon');
+	mobileIcon.addEventListener('click', function() {
+		$('.ui.sidebar')
+		  .sidebar('toggle')
+		;
+	});
+</script>
+</html>

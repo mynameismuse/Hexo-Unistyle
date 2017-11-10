@@ -1,0 +1,113 @@
+.nav (@color, @hover-color, @hover-border, @bg, @nav-hover-border,@home) {
+	.headerWrapper {
+		height: 80px;
+
+		.header {
+			height: 80px;
+			color: @white;
+			top: 0;
+			left: 0;
+			width: 100%;
+			line-height: 80px;
+			z-index: 100;
+			position: relative;
+
+			.container {
+				height: 100%;
+				box-sizing: border-box;
+
+				.logo {
+					margin: 0;
+					float: left;
+					font-size: 32px;
+					font-weight: 400;
+
+					a {
+						color: @white;
+						text-decoration: none;
+						display: block;
+
+						img {
+							height: 40px;
+							line-height: 80px;
+							vertical-align: sub;
+						}
+					}
+				}
+
+				.nav {
+					float: right;
+					height: 100%;
+					line-height: 80px;
+					background-color: transparent;
+					padding: 0;
+					margin: 0;
+
+					.nav-item {
+						margin: 0;
+						float: left;
+						list-style: none;
+						position: relative;
+						cursor: pointer;
+						margin-left: 20px;
+
+						&.mobile {
+							display: none;
+							margin-top: 7px !important;
+						}
+
+						a {
+							text-decoration: none;
+							color: @color;
+							display: block;
+							padding: 0 20px;
+							opacity: .8;
+							height: 75px;
+							font-size: 16px;
+
+							&:after {
+								content: '';
+							  position: absolute;
+							  bottom: 0;
+							  left: 15%;
+							  width: 70%;
+							  height: 3px;
+							  transform: scaleX(0);
+							  background-color: @nav-hover-border;
+							  transition: all .2s ease;
+							}
+
+							&:hover::after {
+								transform: scaleX(1);
+							}
+
+							img {
+								height: 30%;
+							}
+						}
+
+						&:hover,
+						&.active {
+							a when (@home = true) {
+								color: @hover-color;
+							}
+
+							a when (@home = false) {
+								opacity: 1;
+							}
+						}
+					}	
+				}
+			}
+		}
+
+		.header-home {
+			top: 0;
+			background-color: @bg;
+		}
+
+		.header-home when (@home = true) {
+			position: fixed;
+		}
+	}
+}

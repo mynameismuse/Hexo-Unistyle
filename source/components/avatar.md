@@ -7,8 +7,7 @@ title: 图片
 	}
 
 	button {
-		margin-top: 10px;
-		margin-right: 10px;
+		margin: 0 10px;
 	}
 </style>
 

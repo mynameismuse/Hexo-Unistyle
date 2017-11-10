@@ -19,6 +19,9 @@ title: 日期选择器
 
 # 日期选择器
 
+{% note info 文档维护人: 柴肖钧 %}
+{% endnote %}
+
 ## 示例
 
 ### 选择日
@@ -171,17 +174,18 @@ new woUI.DatePicker(target[, options][, callback])
 
 初始化日期选择器的一些配置项，可选参数。包含的属性有：
 
-属性 | 类型 | 作用
+属性 | 类型 | 备注
 ---- | --- | ----
 `type` | `Number` | 指定所要初始化日期控件的类型，取值有：<br>`Datepicker.TYPE_YEAR`: 日期控件选择的日期类型为 `yyyy`<br>`Datepicker.TYPE_MONTH`: 日期控件选择的日期类型为 `yyyyMM`<br>`Datepicker.TYPE_DAY`: 日期控件选择的日期类型为 `yyyyMMdd`
 `date` | `Date`&#124;`String` | 指定日期控件的初始化日期，也就是默认选中的日期
 `range` | `Object` | 指定日期控件可选的日期范围：<br> `range.start`: 日期范围的开始日期<br> `range.end`: 日期范围的结束日期
+`style` | `Object` | 自定义控件相关元素样式`className`，用于覆盖默认样式：<br>`style.input`：target 元素的样式；<br>`style.inputHover`：target 元素`hover`时的样式；<br>`style.inputActive`：target 元素`active`时的样式
 
 <strong>callback `<Function>`</strong>
 
 日期选择器的回调函数，可选参数。回调函数有一个 `date` 参数，它是一个对象，其属性包含：
 
-属性 | 类型 | 作用
+属性 | 类型 | 备注
 --- | --- | ---
 `year` | `Number` | 返回日期控件选中日期的年份信息
 `month` | `Number` | 返回日期控件选中日期的月份信息<br>当日期控件的类型为 `DatePicker.TYPE_MONTH` 时，该返回值始终为 `null`

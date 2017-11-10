@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+	<head>
+    <meta charset="UTF-8">
+    <title>
+        
+        新语法 | 
+        联通通用样式库
+    </title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+    <link rel="stylesheet" type="text/css" href="/css/Icon.min.css">
+    
+        <link rel="stylesheet" href="/css/page.css">
+    
+    
+    <link rel="stylesheet" href="/css/woUI.min.css">
+    <script type="text/javascript" src="/js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="/js/sidebar.min.js"></script>
+    <script type="text/javascript" src="/js/woUI.min.js"></script>
+</head>
+<body>
+	
+		
+		<div class="ui sidebar inverted vertical menu"><a class="item-title">菜单</a><a class="item" href="/docs/install.html">指南</a><a class="item" href="/components/getting-started.html">组件</a><a class="item" href="/resources/resource.html">资源</a><a class="item" href="/about/about.html">关于</a><br><a class="item-title">子菜单</a><a class="item" href="install.html">安装</a><a class="item" href="structure.html">文档结构</a><a class="item" href="new.html">新语法</a></div>
+	
+  <div class="main">
+      <div class="headerWrapper">
+	<div class="header header-home">
+		<div class="container">
+			<h1 class="logo">
+				<a href="/">
+					
+						<img src="/img/woui-logo-white@2x.png">
+					
+				</a>
+			</h1>
+			<ul class="nav">
+				
+				<li class="nav-item"><a href="/docs/install.html">指南</a></li><li class="nav-item"><a href="/components/getting-started.html">组件</a></li><li class="nav-item"><a href="/resources/resource.html">资源</a></li><li class="nav-item"><a href="/about/about.html">关于</a></li>
+				<li class="nav-item mobile" id="mobile-icon">
+					<a>
+						
+							<img src="/img/sidebar-white.png">
+						
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div class="contentWrapper">
+	<div class="container">
+		<div class="content-inner">
+			<article class="article-container">
+				<div class="article-inner">
+					<div class="article">
+						<h1 id="新语法"><a href="#新语法" class="headerlink" title="新语法"></a>新语法</h1><p>为了方便文档的编写，特地增加了更多的<code>markdown</code>扩展语法供大家使用。</p>
+<h2 id="tip语法"><a href="#tip语法" class="headerlink" title="tip语法"></a><code>tip</code>语法</h2><p>在<code>markdown</code>中通过添加tip即可完成<code>tip</code>语法实现。</p>
+<p class="tip"><br>    这是一个Tip。<br></p>
+
+
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">"tip"</span>&gt;</span></div><div class="line">    这是一个Tip。</div><div class="line"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></div></pre></td></tr></table></figure>
+<h2 id="success语法"><a href="#success语法" class="headerlink" title="success语法"></a><code>success</code>语法</h2><p>在<code>markdown</code>中通过添加tip即可完成<code>success</code>语法实现。</p>
+<p class="success"><br>    这是一个Success。<br></p>
+
+
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">"success"</span>&gt;</span></div><div class="line">    这是一个Success。</div><div class="line"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></div></pre></td></tr></table></figure>
+<h2 id="note语法"><a href="#note语法" class="headerlink" title="note语法"></a><code>note</code>语法</h2><p>在<code>markdown</code>中添加类<code>mustache</code>语法即可在<code>render</code>的过程中实现代码转换。</p>
+<h3 id="note-info"><a href="#note-info" class="headerlink" title="note info"></a><code>note info</code></h3><blockquote class="note info"><strong class="note-title">网站存放在子目录</strong><p>如果您的网站存放在子目录中，例如 <code>http://yoursite.com/blog</code>，则请将您的 <code>url</code> 设为 <code>http://yoursite.com/blog</code> 并把 <code>root</code> 设为 <code>/blog/</code>。</p>
+</blockquote>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&#123;% note info 网站存放在子目录 %&#125;</div><div class="line">如果您的网站存放在子目录中，例如 `http://yoursite.com/blog`，则请将您的 `url` 设为 `http://yoursite.com/blog` 并把 `root` 设为 `/blog/`。</div><div class="line">&#123;% endnote %&#125;</div></pre></td></tr></table></figure>
+<h3 id="note-tip"><a href="#note-tip" class="headerlink" title="note tip"></a><code>note tip</code></h3><blockquote class="note tip"><strong class="note-title">网站存放在子目录</strong><p>如果您的网站存放在子目录中，例如 <code>http://yoursite.com/blog</code>，则请将您的 <code>url</code> 设为 <code>http://yoursite.com/blog</code> 并把 <code>root</code> 设为 <code>/blog/</code>。</p>
+</blockquote>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&#123;% note tip 网站存放在子目录 %&#125;</div><div class="line">如果您的网站存放在子目录中，例如 `http://yoursite.com/blog`，则请将您的 `url` 设为 `http://yoursite.com/blog` 并把 `root` 设为 `/blog/`。</div><div class="line">&#123;% endnote %&#125;</div></pre></td></tr></table></figure>
+<h3 id="note-warn"><a href="#note-warn" class="headerlink" title="note warn"></a><code>note warn</code></h3><blockquote class="note warn"><strong class="note-title">网站存放在子目录</strong><p>如果您的网站存放在子目录中，例如 <code>http://yoursite.com/blog</code>，则请将您的 <code>url</code> 设为 <code>http://yoursite.com/blog</code> 并把 <code>root</code> 设为 <code>/blog/</code>。</p>
+</blockquote>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&#123;% note warn 网站存放在子目录 %&#125;</div><div class="line">如果您的网站存放在子目录中，例如 `http://yoursite.com/blog`，则请将您的 `url` 设为 `http://yoursite.com/blog` 并把 `root` 设为 `/blog/`。</div><div class="line">&#123;% endnote %&#125;</div></pre></td></tr></table></figure>
+<h2 id="demo语法"><a href="#demo语法" class="headerlink" title="demo语法"></a><code>demo</code>语法</h2><p>在<code>markdown</code>中添加类<code>mustache</code>语法即可在<code>render</code>的过程中实现代码转换。</p>
+<p><code>demo</code>语法用于隐藏展示代码。</p>
+<div class="demo"><button class="demo-button"><i class="icon icon-arrow-down"></i><span>显示代码</span></button><div class="demo-content"><figure class="highlight yaml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="attr">title:</span> <span class="string">Hello</span> <span class="string">World</span></div><div class="line"><span class="attr">date:</span> <span class="number">2013</span><span class="bullet">-07</span><span class="bullet">-14</span> <span class="number">17</span><span class="string">:01:34</span></div><div class="line"><span class="attr">categories:</span></div><div class="line"><span class="bullet">-</span> <span class="string">foo</span></div><div class="line"><span class="bullet">-</span> <span class="string">bar</span></div></pre></td></tr></table></figure>
+</div></div>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">&#123;% demo %&#125;</div><div class="line">`` yaml</div><div class="line">title: Hello World</div><div class="line">date: 2013-07-14 17:01:34</div><div class="line">categories:</div><div class="line">- foo</div><div class="line">- bar</div><div class="line">``</div><div class="line">&#123;% enddemo %&#125;</div></pre></td></tr></table></figure>
+<h2 id="script语法"><a href="#script语法" class="headerlink" title="script语法"></a><code>script</code>语法</h2><p>在<code>markdown</code>中实现javascript侵入的方式很简单，同样通过<code>tag injection</code>的方式将<code>javascript</code>实例代码嵌入。</p>
+<script type="text/javascript">console.log('test');</script>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&#123;% script %&#125;</div><div class="line">  console.log(&apos;test&apos;);</div><div class="line">&#123;% endscript %&#125;</div></pre></td></tr></table></figure>
+<h2 id="html语法"><a href="#html语法" class="headerlink" title="html语法"></a><code>html</code>语法</h2><p>在<code>markdown</code>中实现原生<code>html</code>嵌入的方式很简单，同样通过<code>tag injection</code>的方式将<code>html</code>代码嵌入生成器中，如果不使用<code>tag</code>方式，空格将会被解析器添加<code>&lt;br&gt;</code>处理，还可以通过合并代码的方式来实现<code>html</code>无换行解析。</p>
+<br>
+<button class="btn btn-blue">蓝色</button>
+<button class="btn btn-red">红色</button>
+<br>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">&#123;% html %&#125;</div><div class="line">  &lt;br&gt;</div><div class="line">  &lt;button class=&quot;btn btn-blue&quot;&gt;蓝色&lt;/button&gt;</div><div class="line">  &lt;button class=&quot;btn btn-red&quot;&gt;红色&lt;/button&gt;</div><div class="line">  &lt;br&gt;</div><div class="line">&#123;% endhtml %&#125;</div></pre></td></tr></table></figure>
+
+					</div>
+					<div class="article-toc">
+						<div class="article-toc-inner">
+							<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#新语法"><span class="toc-text">新语法</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#tip语法"><span class="toc-text">tip语法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#success语法"><span class="toc-text">success语法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#note语法"><span class="toc-text">note语法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#note-info"><span class="toc-text">note info</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#note-tip"><span class="toc-text">note tip</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#note-warn"><span class="toc-text">note warn</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#demo语法"><span class="toc-text">demo语法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#script语法"><span class="toc-text">script语法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#html语法"><span class="toc-text">html语法</span></a></li></ol></li></ol>
+						</div>
+					</div>
+				</div>
+			</article>
+			<aside class="sidebar">
+				<div class="inner">
+					
+					<strong class="sidebar-title">开发指南</strong><a class="sidebar-link"" href="install.html">安装</a><a class="sidebar-link"" href="structure.html">文档结构</a><a class="sidebar-link current"" href="new.html">新语法</a>
+				</div>
+			</aside>
+		</div>
+	</div>
+</div>
+<div class="footerWrapper">
+	<div class="container">
+		<div class="footer-main">
+			<p class="footer-main-title">
+				WoUI 1.0 Alpha Version
+			</p>
+			<p class="footer-main-desc">Powered By 联通支付用户体验设计中心</p>
+		</div>
+		<div class="footer-social">
+			<a href="http://192.168.7.53:3000/woUI/woUI">
+				<img src="/img/github@2x.png">
+			</a>
+		</div>
+	</div>
+</div>
+<script>
+	//定义文章根元素
+	var content = document.querySelector('.article')
+	//查询所有h2标题
+	// var h2 = content.querySelectorAll('h2');
+	// for(var i = 0, length = h2.length; i < length; i++) {
+	// 	var a = h2[i].querySelector('a');
+	// 	var outWrap = document.createElement('a');
+	// 	outWrap.id = '#' + h2[i].id;
+	// 	content.insertBefore(outWrap,h2[i]);
+	// 	outWrap.appendChild(h2[i]);
+
+	// 	var link = document.createElement('a');
+	// 	link.innerHTML = '#';
+	// 	link.href = '#' + h2[i].id;
+	// 	link.className = 'header-link';
+	// 	h2[i].appendChild(link);
+	// }	
+
+	//查询所有h3标题
+	// var h3 = content.querySelectorAll('h3');
+	// for(var i = 0, length = h3.length; i < length; i++) {
+	// 	var a = h3[i].querySelector('a');
+	// 	var outWrap = document.createElement('a');
+	// 	outWrap.id = '#' + h3[i].id;
+	// 	outWrap.style.position = 'relative';
+	// 	content.insertBefore(outWrap, h3[i]);
+	// 	outWrap.appendChild(h3[i]);
+
+	// 	var link = document.createElement('a');
+	// 	link.innerHTML = '#';
+	// 	link.href = '#' + h3[i].id;
+	// 	link.className = 'header-link';
+	// 	h3[i].appendChild(link);
+	// }
+
+	//toc置顶
+	var toc = document.querySelector('.article-toc');
+	var header = document.querySelector('.headerWrapper');
+	var headerHeight = header.clientHeight;
+
+	window.addEventListener('scroll', function() {
+
+		var scrollTop = document.scrollingElement.scrollTop;
+
+		if(scrollTop > headerHeight) {
+			toc.className = 'article-toc fixed';
+		}else {
+			toc.className = 'article-toc';
+		}
+	});
+
+	//代码块提取
+	var demos = document.querySelectorAll('.demo');
+	for(var i = 0, length = demos.length; i < length; i++) {
+
+		var button = demos[i].querySelector('button');
+			
+		var click = demoClick(demos[i]);
+		button.addEventListener('click', click);
+	}
+
+	function demoClick (el) {
+		return function () {
+			var button = el.querySelector('button');
+			var text = button.querySelector('span');
+			var icon = button.querySelector('.icon');
+			if(el.classList.contains('active')) {
+				el.classList.remove('active');
+				icon.classList.remove('active');
+				text.innerHTML = '显示代码';
+			}else {
+				el.classList.add('active');
+				icon.classList.add('active');
+				text.innerHTML = '隐藏代码';
+			}
+
+			console.log(el);
+		}
+	}
+
+	window.addEventListener('scroll', updateSidebar);
+
+	function updateSidebar() {
+		var doc = document.documentElement;
+		var article =document.querySelector('.article');
+		var allHeaders = article.querySelectorAll('h1, h2, h3');
+		var top = doc && doc.scrollTop || document.body.scrollTop;
+		var last;
+		var index;
+
+		for (var i = 0; i < allHeaders.length; i++) {
+			var link = allHeaders[i];
+			if(link.offsetTop > top + 80) {
+				last = link;
+				index = i;
+				break;
+			}
+		}
+
+		if(last) {
+			setActive(last, index);
+		}
+	}
+
+	function setActive(el, index) {
+		var previousActive = document.querySelector('.toc-link.active');
+		var subTitles = document.querySelectorAll('.toc-text');
+
+		if(previousActive) {
+			previousActive.classList.remove('active');
+		}
+
+		if(typeof index == 'number') {
+			subTitles[index].parentNode.classList.add('active');
+		}
+	}
+</script>
+
+
+
+
+
+
+
+
+
+
+  </div>
+</body>
+<script type="text/javascript">
+	console.log('敢偷看我代码!! 发现问题你知道找谁吗？ 你需要联系王昊,你知道吗？ 以后没有我的允许, 不许看我代码!!!!');
+
+	var mobileIcon = document.getElementById('mobile-icon');
+	mobileIcon.addEventListener('click', function() {
+		$('.ui.sidebar')
+		  .sidebar('toggle')
+		;
+	});
+</script>
+</html>

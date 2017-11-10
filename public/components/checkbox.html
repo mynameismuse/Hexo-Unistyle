@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="en">
+	<head>
+    <meta charset="UTF-8">
+    <title>
+        
+        多选框 | 
+        联通通用样式库
+    </title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+    <link rel="stylesheet" type="text/css" href="/css/Icon.min.css">
+    
+        <link rel="stylesheet" href="/css/page.css">
+    
+    
+    <link rel="stylesheet" href="/css/woUI.min.css">
+    <script type="text/javascript" src="/js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="/js/sidebar.min.js"></script>
+    <script type="text/javascript" src="/js/woUI.min.js"></script>
+</head>
+<body>
+	
+		
+		<div class="ui sidebar inverted vertical menu"><a class="item-title">菜单</a><a class="item" href="/docs/install.html">指南</a><a class="item" href="/components/getting-started.html">组件</a><a class="item" href="/resources/resource.html">资源</a><a class="item" href="/about/about.html">关于</a><br><a class="item-title">子菜单</a><a class="item" href="component.html">最新更新</a><a class="item" href="getting-started.html">快速上手</a><a class="item" href="button.html">按钮</a><a class="item" href="breadcrumb.html">面包屑</a><a class="item" href="avatar.html">图片</a><a class="item" href="tooltip.html">提示框</a><a class="item" href="menu.html">菜单</a><a class="item" href="checkbox.html">多选框</a><a class="item" href="checkbox-group.html">多选框组</a><a class="item" href="tabs.html">标签页</a><a class="item" href="pagination.html">分页</a><a class="item" href="datepicker.html">日期选择器</a></div>
+	
+  <div class="main">
+      <div class="headerWrapper">
+	<div class="header header-home">
+		<div class="container">
+			<h1 class="logo">
+				<a href="/">
+					
+						<img src="/img/woui-logo-white@2x.png">
+					
+				</a>
+			</h1>
+			<ul class="nav">
+				
+				<li class="nav-item"><a href="/docs/install.html">指南</a></li><li class="nav-item"><a href="/components/getting-started.html">组件</a></li><li class="nav-item"><a href="/resources/resource.html">资源</a></li><li class="nav-item"><a href="/about/about.html">关于</a></li>
+				<li class="nav-item mobile" id="mobile-icon">
+					<a>
+						
+							<img src="/img/sidebar-white.png">
+						
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div class="contentWrapper">
+	<div class="container">
+		<div class="content-inner">
+			<article class="article-container">
+				<div class="article-inner">
+					<div class="article">
+						<style>
+
+</style>
+
+<h1 id="多选框"><a href="#多选框" class="headerlink" title="多选框"></a>多选框</h1><p>多选框，本组件适合一个多选框孤立使用的情形。如果需要使用多个多选框，需使用 <code>CheckboxGroup</code> 组件。</p>
+<h2 id="代码演示"><a href="#代码演示" class="headerlink" title="代码演示"></a>代码演示</h2><p><span id="J_Checkbox1" data-name="" data-value="wopay" data-checked="">我已阅读并同意<a href="#">某基金</a>协议</span><br><span id="J_Checkbox2" data-color="blue" data-checked="">蓝色</span><br><span id="J_Checkbox3" data-color="purple" data-checked="">紫色</span><br><span id="J_Checkbox4" data-color="orange" data-checked="">橙色</span><br><span id="J_Checkbox5">默认未选中</span><br><span id="J_Checkbox6" data-disabled="">禁止选择</span><br><span id="J_Checkbox7" data-checked="" data-disabled="">禁止选择，已选中</span></p>
+<script type="text/javascript">var checkbox1 = new woUI.Checkbox('#J_Checkbox1')
+var checkbox2 = new woUI.Checkbox('#J_Checkbox2')
+var checkbox3 = new woUI.Checkbox('#J_Checkbox3')
+var checkbox4 = new woUI.Checkbox('#J_Checkbox4')
+var checkbox5 = new woUI.Checkbox('#J_Checkbox5')
+var checkbox6 = new woUI.Checkbox('#J_Checkbox6')
+var checkbox7 = new woUI.Checkbox('#J_Checkbox7')</script>
+<div class="demo"><button class="demo-button"><i class="icon icon-arrow-down"></i><span>显示代码</span></button><div class="demo-content"><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">span</span> <span class="attr">id</span>=<span class="string">"J_Checkbox1"</span></span></div><div class="line"><span class="tag">      <span class="attr">data-name</span>=<span class="string">""</span></span></div><div class="line"><span class="tag">      <span class="attr">data-value</span>=<span class="string">"wopay"</span></span></div><div class="line"><span class="tag">      <span class="attr">data-checked</span>&gt;</span></div><div class="line">    我已阅读并同意<span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"#"</span>&gt;</span>某基金<span class="tag">&lt;/<span class="name">a</span>&gt;</span>协议</div><div class="line"><span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line"></div><div class="line"><span class="tag">&lt;<span class="name">span</span> <span class="attr">id</span>=<span class="string">"J_Checkbox2"</span> <span class="attr">data-color</span>=<span class="string">"blue"</span> <span class="attr">data-checked</span>&gt;</span>蓝色<span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">span</span> <span class="attr">id</span>=<span class="string">"J_Checkbox3"</span> <span class="attr">data-color</span>=<span class="string">"purple"</span> <span class="attr">data-checked</span>&gt;</span>紫色<span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">span</span> <span class="attr">id</span>=<span class="string">"J_Checkbox4"</span> <span class="attr">data-color</span>=<span class="string">"orange"</span> <span class="attr">data-checked</span>&gt;</span>橙色<span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">span</span> <span class="attr">id</span>=<span class="string">"J_Checkbox5"</span>&gt;</span>默认未选中<span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">span</span> <span class="attr">id</span>=<span class="string">"J_Checkbox6"</span> <span class="attr">data-disabled</span>&gt;</span>禁止选择<span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">span</span> <span class="attr">id</span>=<span class="string">"J_Checkbox7"</span> <span class="attr">data-checked</span> <span class="attr">data-disabled</span>&gt;</span>禁止选择，已选中<span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line"></div><div class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></div><div class="line"><span class="undefined">var checkbox1 = new woUI.Checkbox('#J_Checkbox1')</span></div><div class="line"><span class="undefined">var checkbox2 = new woUI.Checkbox('#J_Checkbox2')</span></div><div class="line"><span class="undefined">var checkbox3 = new woUI.Checkbox('#J_Checkbox3')</span></div><div class="line"><span class="undefined">var checkbox4 = new woUI.Checkbox('#J_Checkbox4')</span></div><div class="line"><span class="undefined">var checkbox5 = new woUI.Checkbox('#J_Checkbox5')</span></div><div class="line"><span class="undefined">var checkbox6 = new woUI.Checkbox('#J_Checkbox6')</span></div><div class="line"><span class="undefined">var checkbox7 = new woUI.Checkbox('#J_Checkbox7')</span></div><div class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div></pre></td></tr></table></figure>
+</div></div>
+<h2 id="html-支持属性"><a href="#html-支持属性" class="headerlink" title="html 支持属性"></a>html 支持属性</h2><table>
+<thead>
+<tr>
+<th>属性</th>
+<th>是否必须</th>
+<th>可选值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>data-name</td>
+<td>no</td>
+<td>any</td>
+<td>checkbox 名</td>
+</tr>
+<tr>
+<td>data-value</td>
+<td>no</td>
+<td>any</td>
+<td>checkbox 值</td>
+</tr>
+<tr>
+<td>data-color</td>
+<td>no</td>
+<td>red[默认值] / blue / purple / orange</td>
+<td>颜色</td>
+</tr>
+<tr>
+<td>data-checked</td>
+<td>no</td>
+<td>false[默认值] / true （存在此属性即为true）</td>
+<td>是否被选中</td>
+</tr>
+<tr>
+<td>data-disabled</td>
+<td>no</td>
+<td>false[默认值] / true （存在此属性即为true）</td>
+<td>是否禁止选择</td>
+</tr>
+<tr>
+<td>data-size</td>
+<td>no</td>
+<td>large / small / default[默认值]</td>
+<td>checkbox 大小</td>
+</tr>
+</tbody>
+</table>
+<h2 id="API"><a href="#API" class="headerlink" title="API"></a>API</h2><h3 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h3><p><code>new woUI.Checkbox(queryString)</code></p>
+<ul>
+<li><code>queryString</code>: 可以传入 <code>Element.querySelector</code> 支持字符串，也可以传入元素，但只支持一个元素。</li>
+</ul>
+<h3 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h3><h4 id="获取值"><a href="#获取值" class="headerlink" title="获取值"></a>获取值</h4><p><code>woUI.Checkbox.prototype.value()</code></p>
+<h4 id="获取状态"><a href="#获取状态" class="headerlink" title="获取状态"></a>获取状态</h4><p><code>woUI.Checkbox.prototype.checked()</code></p>
+<h4 id="监听改变"><a href="#监听改变" class="headerlink" title="监听改变"></a>监听改变</h4><p><code>woUI.Checkbox.prototype.on(callback)</code></p>
+<ul>
+<li><code>callback</code>: 回调事件接收1个对象参数，为即将切换到的状态，内容为当前元素的 <code>checked</code> 和 <code>value</code>。回调事件返回结果作为拦截器，如果返回 <code>true</code>，则会拒绝本次改变（<code>change</code>），如果返回 <code>false</code> 或不返回，则执行本次改变。</li>
+</ul>
+<p><code>woUI.Checkbox.prototype.off(callback)</code></p>
+<ul>
+<li><code>callback</code>: 传入callback则取消当前回调，不传入则取消当前元素所有回调</li>
+</ul>
+<h4 id="改变选中状态"><a href="#改变选中状态" class="headerlink" title="改变选中状态"></a>改变选中状态</h4><p><code>woUI.Checkbox.prototype.change(status)</code></p>
+<ul>
+<li><code>status</code>: 传入改变状态的值，支持 <code>Boolean</code> 格式。不传入则进行切换（<code>toggle</code>）。<strong>通过此方法改变 Checkbox 的值，也会触发 <code>on</code> 事件，并受其返回值的影响。</strong></li>
+</ul>
+<h4 id="改变禁止选择状态"><a href="#改变禁止选择状态" class="headerlink" title="改变禁止选择状态"></a>改变禁止选择状态</h4><p><code>woUI.Checkbox.prototype.disabled(status)</code></p>
+<ul>
+<li><code>status</code>: 传入改变状态的值，支持 <code>Boolean</code> 格式。不传入则进行切换（<code>toggle</code>）。</li>
+</ul>
+<h2 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h2><p>当 Checkbox 内容中，有需要触发 <code>click</code> 事件的元素时，需要对元素进行阻止默认事件 <code>preventDefault</code> 处理。否则点击此元素，会触发 Checkbox 状态改变。</p>
+<p>例：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"J_Checkbox1"</span>&gt;</span></div><div class="line">    阅读并同意<span class="tag">&lt;<span class="name">span</span> <span class="attr">style</span>=<span class="string">"color:red"</span> <span class="attr">id</span>=<span class="string">"J_Test"</span>&gt;</span>Test<span class="tag">&lt;/<span class="name">span</span>&gt;</span>协议</div><div class="line"><span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></div><div class="line"><span class="undefined">    document.querySelector('#J_Test').addEventListener('click', function (e) &#123;</span></div><div class="line"><span class="undefined">        e.preventDefault()</span></div><div class="line"><span class="undefined">        window.alert('这是原有内容的事件')</span></div><div class="line"><span class="undefined">    &#125;)</span></div><div class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div></pre></td></tr></table></figure>
+					</div>
+					<div class="article-toc">
+						<div class="article-toc-inner">
+							<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#多选框"><span class="toc-text">多选框</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#代码演示"><span class="toc-text">代码演示</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#html-支持属性"><span class="toc-text">html 支持属性</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#API"><span class="toc-text">API</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#初始化"><span class="toc-text">初始化</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#方法"><span class="toc-text">方法</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#获取值"><span class="toc-text">获取值</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#获取状态"><span class="toc-text">获取状态</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#监听改变"><span class="toc-text">监听改变</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#改变选中状态"><span class="toc-text">改变选中状态</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#改变禁止选择状态"><span class="toc-text">改变禁止选择状态</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#注意"><span class="toc-text">注意</span></a></li></ol></li></ol>
+						</div>
+					</div>
+				</div>
+			</article>
+			<aside class="sidebar">
+				<div class="inner">
+					
+					<strong class="sidebar-title">更新日志</strong><a class="sidebar-link"" href="component.html">最新更新</a><strong class="sidebar-title">基础组件</strong><a class="sidebar-link"" href="getting-started.html">快速上手</a><a class="sidebar-link"" href="button.html">按钮</a><a class="sidebar-link"" href="breadcrumb.html">面包屑</a><a class="sidebar-link"" href="avatar.html">图片</a><a class="sidebar-link"" href="tooltip.html">提示框</a><a class="sidebar-link"" href="menu.html">菜单</a><a class="sidebar-link current"" href="checkbox.html">多选框</a><a class="sidebar-link"" href="checkbox-group.html">多选框组</a><a class="sidebar-link"" href="tabs.html">标签页</a><a class="sidebar-link"" href="pagination.html">分页</a><a class="sidebar-link"" href="datepicker.html">日期选择器</a>
+				</div>
+			</aside>
+		</div>
+	</div>
+</div>
+<div class="footerWrapper">
+	<div class="container">
+		<div class="footer-main">
+			<p class="footer-main-title">
+				WoUI 1.0 Alpha Version
+			</p>
+			<p class="footer-main-desc">Powered By 联通支付用户体验设计中心</p>
+		</div>
+		<div class="footer-social">
+			<a href="http://192.168.7.53:3000/woUI/woUI">
+				<img src="/img/github@2x.png">
+			</a>
+		</div>
+	</div>
+</div>
+<script>
+	//定义文章根元素
+	var content = document.querySelector('.article')
+	//查询所有h2标题
+	// var h2 = content.querySelectorAll('h2');
+	// for(var i = 0, length = h2.length; i < length; i++) {
+	// 	var a = h2[i].querySelector('a');
+	// 	var outWrap = document.createElement('a');
+	// 	outWrap.id = '#' + h2[i].id;
+	// 	content.insertBefore(outWrap,h2[i]);
+	// 	outWrap.appendChild(h2[i]);
+
+	// 	var link = document.createElement('a');
+	// 	link.innerHTML = '#';
+	// 	link.href = '#' + h2[i].id;
+	// 	link.className = 'header-link';
+	// 	h2[i].appendChild(link);
+	// }	
+
+	//查询所有h3标题
+	// var h3 = content.querySelectorAll('h3');
+	// for(var i = 0, length = h3.length; i < length; i++) {
+	// 	var a = h3[i].querySelector('a');
+	// 	var outWrap = document.createElement('a');
+	// 	outWrap.id = '#' + h3[i].id;
+	// 	outWrap.style.position = 'relative';
+	// 	content.insertBefore(outWrap, h3[i]);
+	// 	outWrap.appendChild(h3[i]);
+
+	// 	var link = document.createElement('a');
+	// 	link.innerHTML = '#';
+	// 	link.href = '#' + h3[i].id;
+	// 	link.className = 'header-link';
+	// 	h3[i].appendChild(link);
+	// }
+
+	//toc置顶
+	var toc = document.querySelector('.article-toc');
+	var header = document.querySelector('.headerWrapper');
+	var headerHeight = header.clientHeight;
+
+	window.addEventListener('scroll', function() {
+
+		var scrollTop = document.scrollingElement.scrollTop;
+
+		if(scrollTop > headerHeight) {
+			toc.className = 'article-toc fixed';
+		}else {
+			toc.className = 'article-toc';
+		}
+	});
+
+	//代码块提取
+	var demos = document.querySelectorAll('.demo');
+	for(var i = 0, length = demos.length; i < length; i++) {
+
+		var button = demos[i].querySelector('button');
+			
+		var click = demoClick(demos[i]);
+		button.addEventListener('click', click);
+	}
+
+	function demoClick (el) {
+		return function () {
+			var button = el.querySelector('button');
+			var text = button.querySelector('span');
+			var icon = button.querySelector('.icon');
+			if(el.classList.contains('active')) {
+				el.classList.remove('active');
+				icon.classList.remove('active');
+				text.innerHTML = '显示代码';
+			}else {
+				el.classList.add('active');
+				icon.classList.add('active');
+				text.innerHTML = '隐藏代码';
+			}
+
+			console.log(el);
+		}
+	}
+
+	window.addEventListener('scroll', updateSidebar);
+
+	function updateSidebar() {
+		var doc = document.documentElement;
+		var article =document.querySelector('.article');
+		var allHeaders = article.querySelectorAll('h1, h2, h3');
+		var top = doc && doc.scrollTop || document.body.scrollTop;
+		var last;
+		var index;
+
+		for (var i = 0; i < allHeaders.length; i++) {
+			var link = allHeaders[i];
+			if(link.offsetTop > top + 80) {
+				last = link;
+				index = i;
+				break;
+			}
+		}
+
+		if(last) {
+			setActive(last, index);
+		}
+	}
+
+	function setActive(el, index) {
+		var previousActive = document.querySelector('.toc-link.active');
+		var subTitles = document.querySelectorAll('.toc-text');
+
+		if(previousActive) {
+			previousActive.classList.remove('active');
+		}
+
+		if(typeof index == 'number') {
+			subTitles[index].parentNode.classList.add('active');
+		}
+	}
+</script>
+
+
+
+
+
+
+
+
+
+
+  </div>
+</body>
+<script type="text/javascript">
+	console.log('敢偷看我代码!! 发现问题你知道找谁吗？ 你需要联系王昊,你知道吗？ 以后没有我的允许, 不许看我代码!!!!');
+
+	var mobileIcon = document.getElementById('mobile-icon');
+	mobileIcon.addEventListener('click', function() {
+		$('.ui.sidebar')
+		  .sidebar('toggle')
+		;
+	});
+</script>
+</html>
