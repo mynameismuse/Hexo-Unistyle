@@ -1,5 +1,5 @@
 ## Home favicon ---首页网站图标位置
-favicon: img/logo-1@2x.png
+favicon: img/woui-logo-purple@2x.png
 
 ## Home Content Setting ---首页内容配置
 content_img: img/woui@2x.png
@@ -26,9 +26,9 @@ cards_3_link: /resources/resource.html
 
 ## Home Footer Setting ---首页底部配置
 footer_main_title: WoUI 1.0 Alpha Version
-footer_main_desc: Powered By 庙里的王和尚
+footer_main_desc: Powered By 联通支付用户体验设计中心
 github_img: img/github@2x.png
 github_link: http://192.168.7.53:3000/woUI/woUI
 
 ## Page favicon ---文章页网站图标位置
-page_favicon: img/logo-2@2x.png
+page_favicon: img/woui-logo-white@2x.png

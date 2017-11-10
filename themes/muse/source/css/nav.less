@@ -1,4 +1,4 @@
-.nav (@color, @hover-color, @hover-border, @bg, @home) {
+.nav (@color, @hover-color, @hover-border, @bg, @nav-hover-border,@home) {
 	.headerWrapper {
 		height: 80px;
 
@@ -62,8 +62,24 @@
 							display: block;
 							padding: 0 20px;
 							opacity: .8;
-							height: 70px;
+							height: 75px;
 							font-size: 16px;
+
+							&:after {
+								content: '';
+							  position: absolute;
+							  bottom: 0;
+							  left: 15%;
+							  width: 70%;
+							  height: 3px;
+							  transform: scaleX(0);
+							  background-color: @nav-hover-border;
+							  transition: all .2s ease;
+							}
+
+							&:hover::after {
+								transform: scaleX(1);
+							}
 
 							img {
 								height: 30%;
@@ -72,10 +88,6 @@
 
 						&:hover,
 						&.active {
-							a {
-								border-bottom: 3px solid @hover-border;
-							}
-
 							a when (@home = true) {
 								color: @hover-color;
 							}

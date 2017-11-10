@@ -7,9 +7,6 @@ title: 标签页
 
 # 标签页
 
-{% note info 文档维护人: 李静晨 %}
-{% endnote %}
-
 选项卡切换组件。
 
 提供平级的区域将大块内容进行收纳和展现，保持界面整洁。
@@ -77,11 +74,11 @@ tabs2.on(function (tab, oldTab) {
 
 | 属性           | 是否必须 | 可选值             | 说明                           |
 | ------------ | ---- | --------------- | ---------------------------- |
-| data-style   | no   | bordered 或空（默认） | Tabs 外观                      |
-| data-default | no   | any             | Tabs 默认选中标签页，与子元素 data-key 对应。不传入则默认为为第一页 |
-| data-key     | yes  | any             | 仅子元素可配置，当前 Tab 名             |
-| data-name    | yes  | any             | 仅子元素可配置，当前 Tab 的显示名          |
-| class        | no   | any             | 仅子元素可配置，此样式类将最终渲染到 Tab 类上    |
+| `data-style`   | no   | bordered 或空（默认） | `Tab` 外观                      |
+| `data-default` | no   | any             | `Tab` 默认选中标签页，与子元素 `data-key` 对应。不传入则默认为为第一页 |
+| `data-key`     | yes  | any             | 仅子元素可配置，当前 `Tab` 名             |
+| `data-name`   | yes  | any             | 仅子元素可配置，当前 `Tab` 的显示名          |
+| `class`        | no   | any             | 仅子元素可配置，此样式类将最终渲染到 `Tab` 类上    |
 
 ## API
 

@@ -14,9 +14,6 @@ title: 按钮
 
 # 按钮
 
-{% note info 文档维护人: 王昊 %}
-{% endnote %}
-
 ## 基础用法
 
 基础的按钮用法。
@@ -249,6 +246,20 @@ Button 组件提供除了默认值以外的三种尺寸，可以在不同场景�
   <button class="btn btn-blue btn-small">小型按钮</button>
   <button class="btn btn-blue">正常按钮</button>
   <button class="btn btn-blue btn-large">大型按钮</button>
+  </br>
+  </br>
+  <button class="btn btn-circle btn-blue btn-mini">
+    <i class="icon icon-add"></i>
+  </button>
+  <button class="btn btn-circle btn-blue btn-small">
+    <i class="icon icon-add"></i>
+  </button>
+  <button class="btn btn-circle btn-blue">
+    <i class="icon icon-add"></i>
+  </button>
+  <button class="btn btn-circle btn-blue btn-large">
+    <i class="icon icon-add"></i>
+  </button>
 {% endhtml %}
 
 {% demo %}
@@ -266,24 +277,7 @@ Button 组件提供除了默认值以外的三种尺寸，可以在不同场景�
   大型按钮
 </button>
 ```
-{% enddemo %}
 
-{% html %}
-  <button class="btn btn-circle btn-blue btn-mini">
-    <i class="icon icon-add"></i>
-  </button>
-  <button class="btn btn-circle btn-blue btn-small">
-    <i class="icon icon-add"></i>
-  </button>
-  <button class="btn btn-circle btn-blue">
-    <i class="icon icon-add"></i>
-  </button>
-  <button class="btn btn-circle btn-blue btn-large">
-    <i class="icon icon-add"></i>
-  </button>
-{% endhtml %}
-
-{% demo %}
 ``` html
 <button class="btn btn-circle btn-blue btn-mini">
   <i class="icon icon-add"></i>

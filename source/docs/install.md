@@ -4,9 +4,6 @@ title: 安装
 
 # 安装
 
-{% note info 文档维护人: 王昊 %}
-{% endnote %}
-
 `WoUI-web`为联通样式库官方`markdown`解析网站生成器，通过本解析器，您只需要将您的`markdown`代码加入项目即可完成网站合并和生成工作，并参加到文档编写的工作中来。
 
 ## 什么是WoUI-web?

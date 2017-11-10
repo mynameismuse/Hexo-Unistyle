@@ -12,6 +12,8 @@ components:
   基础组件:
     快速上手: getting-started.html
     按钮: button.html
+    面包屑: breadcrumb.html
+    图片: avatar.html
     提示框: tooltip.html
     菜单: menu.html
     多选框: checkbox.html

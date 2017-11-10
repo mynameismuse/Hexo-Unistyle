@@ -5,37 +5,37 @@
 	//定义文章根元素
 	var content = document.querySelector('.article')
 	//查询所有h2标题
-	var h2 = content.querySelectorAll('h2');
-	for(var i = 0, length = h2.length; i < length; i++) {
-		var a = h2[i].querySelector('a');
-		var outWrap = document.createElement('a');
-		outWrap.id = '#' + h2[i].id;
-		content.insertBefore(outWrap,h2[i]);
-		outWrap.appendChild(h2[i]);
+	// var h2 = content.querySelectorAll('h2');
+	// for(var i = 0, length = h2.length; i < length; i++) {
+	// 	var a = h2[i].querySelector('a');
+	// 	var outWrap = document.createElement('a');
+	// 	outWrap.id = '#' + h2[i].id;
+	// 	content.insertBefore(outWrap,h2[i]);
+	// 	outWrap.appendChild(h2[i]);
 
-		var link = document.createElement('a');
-		link.innerHTML = '#';
-		link.href = '#' + h2[i].id;
-		link.className = 'header-link';
-		h2[i].appendChild(link);
-	}	
+	// 	var link = document.createElement('a');
+	// 	link.innerHTML = '#';
+	// 	link.href = '#' + h2[i].id;
+	// 	link.className = 'header-link';
+	// 	h2[i].appendChild(link);
+	// }	
 
 	//查询所有h3标题
-	var h3 = content.querySelectorAll('h3');
-	for(var i = 0, length = h3.length; i < length; i++) {
-		var a = h3[i].querySelector('a');
-		var outWrap = document.createElement('a');
-		outWrap.id = '#' + h3[i].id;
-		outWrap.style.position = 'relative';
-		content.insertBefore(outWrap, h3[i]);
-		outWrap.appendChild(h3[i]);
+	// var h3 = content.querySelectorAll('h3');
+	// for(var i = 0, length = h3.length; i < length; i++) {
+	// 	var a = h3[i].querySelector('a');
+	// 	var outWrap = document.createElement('a');
+	// 	outWrap.id = '#' + h3[i].id;
+	// 	outWrap.style.position = 'relative';
+	// 	content.insertBefore(outWrap, h3[i]);
+	// 	outWrap.appendChild(h3[i]);
 
-		var link = document.createElement('a');
-		link.innerHTML = '#';
-		link.href = '#' + h3[i].id;
-		link.className = 'header-link';
-		h3[i].appendChild(link);
-	}
+	// 	var link = document.createElement('a');
+	// 	link.innerHTML = '#';
+	// 	link.href = '#' + h3[i].id;
+	// 	link.className = 'header-link';
+	// 	h3[i].appendChild(link);
+	// }
 
 	//toc置顶
 	var toc = document.querySelector('.article-toc');

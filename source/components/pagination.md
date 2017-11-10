@@ -11,9 +11,6 @@ title: 按钮
 </style>
 # 分页组件
 
-{% note info 文档维护人: 陈超 %}
-{% endnote %}
-
 ## 基础用法 
  <div id="paginations"></div>
 
